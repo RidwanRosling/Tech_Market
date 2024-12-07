@@ -267,7 +267,7 @@ elif st.session_state.page == "GPU":
         st.subheader("Nvidia G series")
         st.image("zaki/kumpulan gambar/1024 (1).png", caption="GTX 1660 Gaming X 6G")
         with st.popover("Press"):
-            st.markdown("**Rp. 2.020.000**")
+            st.markdown("**Rp. 1.679.000**")
             st.markdown("- Memory Amount : 6G\
                         \n - Memory Interface : 192bit\
                         \n - DRAM Type : GDDR6\
@@ -288,7 +288,24 @@ elif st.session_state.page == "GPU":
                         \n - Graphics Card Power : 125 W\
                         \n - Recommended System Power : 450 W")
             st.button("Order now", key="gpu2")
-    harga_gpu1 = 2020000 # harganya
+    harga_gpu2 = 2020000 # harganya
+    with gpu3:
+        st.subheader("Intel arc")
+        st.image("zaki/kumpulan gambar/e60d7796-d02c-486e-8c6a-dc94ed501ab8.png", caption="Intel ARC 750")
+        with st.popover("Press"):
+            st.markdown("**Rp. 3.499.000**")
+            st.markdown("- Memory Size : 8 GB\
+                        \n - Memory Type : GDDR6\
+                        \n - Graphics Memory Interface : 256 bit\
+                        \n - Graphics Memory Bandwidth : 512 GB/s\
+                        \n - Graphics Memory Speed : 16 Gbps\
+                        \n - Vertical Segment : Desktop\
+                        \n - Xecores : 28\
+                        \n - Render Slices : 7\
+                        \n - Ray Tracing Units : 28\
+                        \n - Intel® Xe Matrix Extensions (Intel® XMX) : Engines448")
+            st.button("Order now", key="gpu3")
+    harga_gpu3 = 3499000 # harganya
 
 
 
