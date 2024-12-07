@@ -11,21 +11,21 @@ def switch_page(page_name):
 # Sidebar atau navigasi
 st.sidebar.title("Menu")
 if st.sidebar.button("Home", use_container_width=True):
-    home = switch_page("Home")
+    switch_page("Home")
 if st.sidebar.button("Motherboard 😃", use_container_width=True):
-    motherboard = switch_page("Motherboard")
+    switch_page("Motherboard")
 if st.sidebar.button("CPU 😎", use_container_width=True):
-    cpu = switch_page("CPU")
+    switch_page("CPU")
 if st.sidebar.button("GPU 💀", use_container_width=True):
-    gpu = switch_page("GPU")
+    switch_page("GPU")
 if st.sidebar.button("SSD 🧐", use_container_width=True):
-    ssd = switch_page("SSD")
+    switch_page("SSD")
 if st.sidebar.button("RAM 🙂", use_container_width=True):
-    ram = switch_page("RAM")
+    switch_page("RAM")
 if st.sidebar.button("PSU ⚡", use_container_width=True):
-    psu = switch_page("PSU")
+    switch_page("PSU")
 if st.sidebar.button("Casing 🤔", use_container_width=True):
-    casing = switch_page("Casing")
+    switch_page("Casing")
 
 
 # Menampilkan konten berdasarkan halaman
@@ -156,7 +156,78 @@ elif st.session_state.page == "Motherboard":
 
 elif st.session_state.page == "CPU":
     st.title("CPU")
-    st.write("Ini adalah halaman informasi CPU.")
+    st.write("**Central processing unit**")
+    st.write("atau dalam bahasa Indonesia dikenal sebagai unit pemrosesan pusat,\
+            adalah komponen utama dalam komputer yang bertanggung jawab untuk menjalankan perintah dan\
+            instruksi dari perangkat lunak (software). CPU sering disebut sebagai otak komputer karena semua proses\
+            inti pengolahan data dilakukan di sana.")
+
+    cpu1, cpu2, cpu3, cpu4 = st.columns(4)
+    with cpu1:
+        st.subheader("Amd ryzen 5000 series")
+        st.image("zaki/kumpulan gambar/cea0c491-d4f5-43da-974b-cb5c06597b95.jpg", caption="AMD Ryzen 9 5900X")
+        with st.popover("Press"):
+            st.markdown("**Rp. 5.730.000**")
+            st.markdown("- 12 Core\n - 24 threads\n - Base clock 3.4Ghz\n - Max clock up to 4.8GhzTotal L2 Cache 6MB\n - Total L3 Cache 64MB\n - Unlocked Yes\
+                        \n - CMOS TSMC 7nm FinFET\n - Package AM4\n - PCI Express Version PCIe 4.0\n - Thermal Solution (PIB) Not included\n - Default TDP / TDP 105W")
+            st.button("Order now", key="cpu1")
+    harga_cpu1 = 5730000 # Harganya
+
+    with cpu2:
+        st.subheader("Intel pentium Gold")
+        st.image("zaki/kumpulan gambar/20200611151837_th.jpg", caption="intel pentium G5420")
+        with st.popover("Press"):
+            st.markdown("**Rp.840.000**")
+            st.markdown("- CPU Socket Type : LGA 1151\n - Processors Generation : 9th Gen\n - Family : Coffeelake\n - Cores : 2\n\
+                        - Threads : 4\n - Operating Frequency : 3.8GHz\n - Max Turbo Frequency : -\n - Cache : 4 MB\n - Manufacturing Tech : 14 nm\n - Integrated Graphics : Intel UHD Graphics 610\
+                        \n - Thermal Design Power : 54 W\n - Thermal Solution (Cooler) : Included")
+            st.button("Order now", key="cpu2")
+    harga_cpu2 = 840000
+    with cpu3:
+        st.subheader("Amd ryzen 3000 series")
+        st.image("zaki/kumpulan gambar/ffe4a4fa-23ef-4748-8e7c-926ae68b3820.jpg", caption="Ryzen 5 3600")
+        with st.popover("Press"):
+            st.markdown("**Rp.2.020.000**")
+            st.markdown("- 6 core\
+                        \n - 12 threads\
+                        \n - Base clock 3.6Ghz\
+                        \n - Max boost clock 4.2Ghz\
+                        \n - total L1 cache 64kb\
+                        \n - total L2 cache 3MB\
+                        \n - titak L3 cache 32Mb\
+                        \n - unlocked\
+                        \n - yes\
+                        \n - CMOS\
+                        \n - TSMC 7nm FinFET\
+                        \n - Package\
+                        \n - AM4\
+                        \n - PCI Express® VersionROM-06a\
+                        \n - PCIe 4.0 x16\
+                        \n - Thermal Solution\
+                        \n - Wraith Stealth\
+                        \n - Default TDP / TDPROM-06a\
+                        \n - 65W\
+                        \n - Max Temps\
+                        \n - 95°")
+            st.button("Order now", key="cpu3")
+    harga_cpu2 = 2020000
+    with cpu4:
+        st.subheader("Intel gen 10")
+        st.image("zaki/kumpulan gambar/9126088_0d6b3035-4d20-4d61-8df3-39ac27acbdf8_700_700.jpg", caption="Intel I5 10400F")
+        with st.popover("Press"):
+            st.markdown("**Rp.1.635.000**")
+            st.markdown("- 6 Core\
+                        \n - 12 Threads\
+                        \n - Processor base frequency 2.90Ghz\
+                        \n - Max Turbo frequency 4.30Ghz\
+                        \n - cache 12 MB intel® Smart cache\
+                        \n - Bus speed 8 GT/s\
+                        \n - TDP 65 W")
+            st.button("Order now", key="cpu4")
+    harga_cpu2 = 2020000
+
+
+
     
 
 
@@ -164,7 +235,71 @@ elif st.session_state.page == "CPU":
 
 elif st.session_state.page == "GPU":
     st.title("GPU")
-    st.write("ini adalah halaman informasi GPU")
+    st.write("**GPU** (Graphics Processing Unit), atau dalam bahasa Indonesia disebut unit\
+              pemrosesan grafis, adalah komponen hardware yang dirancang khusus untuk menangani\
+              dan mempercepat pemrosesan grafik. GPU awalnya digunakan terutama untuk rendering\
+              gambar 3D pada komputer, tetapi kini memiliki aplikasi yang jauh lebih luas, termasuk\
+              untuk komputasi umum (GPGPU) seperti AI,\
+              pembelajaran mesin, dan simulasi fisika.")
+    
+    gpu1, gpu2, gpu3, gpu4 = st.columns(4)
+
+    with gpu1:
+        st.subheader("Amd Rx")
+        st.image("zaki/kumpulan gambar/1024.png", caption="Radeon RX 580 GAMING X 8G")
+        with st.popover("Press"):
+            st.markdown("**Rp. 1.650.000**")
+            st.markdown("- Interface: PCI-E\
+                        \n - Core Clock: 1244 MHz\
+                        \n - Memory: 8GB DDR5\
+                        \n - Memory Clock: 1750 MHz\
+                        \n - Memory Bus: 256 Bit\
+                        \n - Display Outputs: 1x HDMI, 2x DP\
+                        \n - Cooling: Double Fan Ultimate Cooling\
+                        \n - Power Input: PCIe 8-pin\
+                        \n - Power Consumption: 150 W\
+                        \n - Type: ATX\
+                        \n - Support OS: Win 7,10 and 11")
+            st.button("Order now", key="gpu1")
+    harga_gpu1 = 1650000 # harganya
+
+    with gpu2:
+        st.subheader("Nvidia G series")
+        st.image("zaki/kumpulan gambar/1024 (1).png", caption="GTX 1660 Gaming X 6G")
+        with st.popover("Press"):
+            st.markdown("**Rp. 2.020.000**")
+            st.markdown("- Memory Amount : 6G\
+                        \n - Memory Interface : 192bit\
+                        \n - DRAM Type : GDDR6\
+                        \n - Graphics Clock : 1530 MHz\
+                        \n - Boost Clock : 1830 MHz\
+                        \n - Memory Clock : 14 Gbps\
+                        \n - CUDA Cores : 1408\
+                        \n - Memory Bandwidth (GB/sec) : 336\
+                        \n - Microsoft DirectX : 12 API, Vulkan API\
+                        \n - OpenGL : 4.6\
+                        \n - Bus Support : PCI-E 3.0 x 16\
+                        \n - DVI : Dual-Link DVI-D\
+                        \n - HDMI : HDMI 2.0b\
+                        \n - DisplayPort : DP1.4a x 1\
+                        \n - Maximum Digital Resolution : 7680x4320@60Hz\
+                        \n - Height : 2 Slot\
+                        \n - Board Size : 235 x 115 x 40 mm\
+                        \n - Graphics Card Power : 125 W\
+                        \n - Recommended System Power : 450 W")
+            st.button("Order now", key="gpu2")
+    harga_gpu1 = 2020000 # harganya
+
+
+
+
+
+
+
+
+
+
+
 
 
 
