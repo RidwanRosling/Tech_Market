@@ -40,17 +40,17 @@ if st.session_state.page == "Home":
     col1, col2, col3 = st.columns(3)
     with col1:
         st.header("Cpu")
-        st.image("Zaki/kumpulan gambar/53bc3a1d-cf61-41d7-91f4-2124dbde60d9.jpg", caption="Intel core i9 14900K Box")
+        st.image("zaki/kumpulan gambar/53bc3a1d-cf61-41d7-91f4-2124dbde60d9.jpg", caption="Intel core i9 14900K Box")
         st.button("Go to CPU page", key="switch_button_1", on_click=switch_page, args=("CPU",))
     
     with col2:
         st.header("Gpu")
-        st.image("Zaki/kumpulan gambar/d909e419-85d0-476f-995d-4e2476f310c8.jpg", caption="MSI GeForce RTX 4090 GAMING X TRIO 24GB GDDR6X")
+        st.image("zaki/kumpulan gambar/d909e419-85d0-476f-995d-4e2476f310c8.jpg", caption="MSI GeForce RTX 4090 GAMING X TRIO 24GB GDDR6X")
         st.button("Go to GPU page", key="switch_button_2", on_click=switch_page, args=("GPU",))
 
     with col3:
         st.header("Casing")
-        st.image("Zaki/kumpulan gambar/b70fc2df-20f4-4626-ad91-1de714210895.jpg", caption="TECWARE FLATLINE TG MK2")
+        st.image("zaki/kumpulan gambar/b70fc2df-20f4-4626-ad91-1de714210895.jpg", caption="TECWARE FLATLINE TG MK2")
         st.button("Go to Casing page", key="switch_button_3", on_click=switch_page, args=("Casing",))
     
 
