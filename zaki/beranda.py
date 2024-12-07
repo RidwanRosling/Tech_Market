@@ -11,21 +11,21 @@ def switch_page(page_name):
 # Sidebar atau navigasi
 st.sidebar.title("Menu")
 if st.sidebar.button("Home", use_container_width=True):
-    switch_page("Home")
+    home = switch_page("Home")
 if st.sidebar.button("Motherboard 😃", use_container_width=True):
-    switch_page("Motherboard")
+    motherboard = switch_page("Motherboard")
 if st.sidebar.button("CPU 😎", use_container_width=True):
-    switch_page("CPU")
+    cpu = switch_page("CPU")
 if st.sidebar.button("GPU 💀", use_container_width=True):
-    switch_page("GPU")
+    gpu = switch_page("GPU")
 if st.sidebar.button("SSD 🧐", use_container_width=True):
-    switch_page("SSD")
+    ssd = switch_page("SSD")
 if st.sidebar.button("RAM 🙂", use_container_width=True):
-    switch_page("RAM")
+    ram = switch_page("RAM")
 if st.sidebar.button("PSU ⚡", use_container_width=True):
-    switch_page("PSU")
+    psu = switch_page("PSU")
 if st.sidebar.button("Casing 🤔", use_container_width=True):
-    switch_page("Casing")
+    casing = switch_page("Casing")
 
 
 # Menampilkan konten berdasarkan halaman
@@ -41,14 +41,17 @@ if st.session_state.page == "Home":
     with col1:
         st.header("Cpu")
         st.image("Zaki/kumpulan gambar/53bc3a1d-cf61-41d7-91f4-2124dbde60d9.jpg", caption="Intel core i9 14900K Box")
+        st.button("Go to CPU page", key="switch_button_1", on_click=switch_page, args=("CPU",))
     
     with col2:
         st.header("Gpu")
         st.image("Zaki/kumpulan gambar/d909e419-85d0-476f-995d-4e2476f310c8.jpg", caption="MSI GeForce RTX 4090 GAMING X TRIO 24GB GDDR6X")
+        st.button("Go to GPU page", key="switch_button_2", on_click=switch_page, args=("GPU",))
 
     with col3:
         st.header("Casing")
         st.image("Zaki/kumpulan gambar/b70fc2df-20f4-4626-ad91-1de714210895.jpg", caption="TECWARE FLATLINE TG MK2")
+        st.button("Go to Casing page", key="switch_button_3", on_click=switch_page, args=("Casing",))
     
 
 
@@ -76,7 +79,7 @@ elif st.session_state.page == "Motherboard":
                         6 SATA3, 1 Hyper M.2 (PCIe Gen4 x4), 1 M.2 (PCIe Gen3 x2 & SATA3)\
                         2 USB 3.2 Gen2 (Rear Type A+C), 8 USB 3.2 Gen1 (4 Front, 4 Rear)\
                         Realtek Gigabit LAN")
-            st.button("Order now", key="button 1")
+            st.button("Order now", key="mobo_1")
         harga_col4 = 1548000 # Harganya
     
     with col5:
@@ -101,7 +104,7 @@ elif st.session_state.page == "Motherboard":
                         1 x Hyper M.2 Socket (M2_1), supports M Key type 2260/2280 M.2 PCI Express module up to Gen4x4 (64 Gb/s) (Socket M2_1 works with 11th Gen Intel® Core™ processors only)*\
                         1 x Ultra M.2 Socket (M2_2), supports M Key type 2260/2280 M.2 SATA3 6.0 Gb/s module and M.2 PCI Express module up to Gen3 x4 (32 Gb/s)*\
                         Micro ATX Form Factor: 9.6-in x 7.8-in, 24.4 cm x 19.8 cm ")
-            st.button("Order now", key="button 2")
+            st.button("Order now", key= "mobo_2")
         harga_col5 = 1250000 # Harganya
             
     with col6:
@@ -128,7 +131,7 @@ elif st.session_state.page == "Motherboard":
                         Dual Channel DDR4 Memory Technology\
                         2 x DDR4 DIMM Slots\
                         AMD Ryzen series CPUs ")
-            st.button("Order now", key="button 3")
+            st.button("Order now", key="mobo_3")
         harga_col6 = 989000 # Harganya
     with col7:
         st.subheader("Asus")
@@ -140,7 +143,7 @@ elif st.session_state.page == "Motherboard":
                         Intel Socket LGA1200 for 10th Gen Intel Core, Pentium Gold and Celeron Processors*\
                         4 x DIMM, Max. 128GB, DDR4 2933/2800/2666/2400/2133 MHz Non-ECC, Un-buffered Memory*\
                         SupremeFX Shielding Technology")
-            st.button("Order now", key="button 4")
+            st.button("Order now", key="mobo_4")
         harga_col7 = 3300000 #harganya
 
         
@@ -154,6 +157,7 @@ elif st.session_state.page == "Motherboard":
 elif st.session_state.page == "CPU":
     st.title("CPU")
     st.write("Ini adalah halaman informasi CPU.")
+    
 
 
 
