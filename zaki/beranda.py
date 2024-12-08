@@ -1,4 +1,11 @@
 import streamlit as st
+from PIL import Image
+
+# Fungsi untuk mengubah ukuran gambar
+def resize_image(image_path, size=(300, 300)):
+    img = Image.open(image_path)
+    img_resized = img.resize(size)
+    return img_resized
 
 # Inisialisasi session state
 if "page" not in st.session_state:
@@ -45,7 +52,7 @@ if st.session_state.page == "Home":
     
     with col2:
         st.header("Gpu")
-        st.image("zaki/kumpulan gambar/d909e419-85d0-476f-995d-4e2476f310c8.jpg", caption="MSI GeForce RTX 4090 GAMING X TRIO 24GB GDDR6X")
+        st.image(resize_image("zaki/kumpulan gambar/d909e419-85d0-476f-995d-4e2476f310c8.jpg"), caption="MSI GeForce RTX 4090 GAMING X TRIO 24GB GDDR6X")
         st.button("Go to GPU page", key="switch_button_2", on_click=switch_page, args=("GPU",))
 
     with col3:
@@ -155,7 +162,7 @@ elif st.session_state.page == "CPU":
     cpu1, cpu2, cpu3, cpu4 = st.columns(4)
     with cpu1:
         st.subheader("Amd ryzen 5000 series")
-        st.image("zaki/kumpulan gambar/cea0c491-d4f5-43da-974b-cb5c06597b95.jpg", caption="AMD Ryzen 9 5900X")
+        st.image(resize_image("zaki/kumpulan gambar/cea0c491-d4f5-43da-974b-cb5c06597b95.jpg"), caption="AMD Ryzen 9 5900X")
         with st.popover("Press"):
             st.markdown("**Rp. 5.730.000**")
             st.markdown("- 12 Core\n - 24 threads\n - Base clock 3.4Ghz\n - Max clock up to 4.8GhzTotal L2 Cache 6MB\n - Total L3 Cache 64MB\n - Unlocked Yes\
@@ -176,7 +183,7 @@ elif st.session_state.page == "CPU":
 
     with cpu3:
         st.subheader("Amd ryzen 3000 series")
-        st.image("zaki/kumpulan gambar/ffe4a4fa-23ef-4748-8e7c-926ae68b3820.jpg", caption="Ryzen 5 3600")
+        st.image(resize_image("zaki/kumpulan gambar/f9b52508-10b7-416f-85fb-a6dfc883c0a2.jpg"), caption="Ryzen 5 3600")
         with st.popover("Press"):
             st.markdown("**Rp.2.020.000**")
             st.markdown("- 6 core\
@@ -204,7 +211,7 @@ elif st.session_state.page == "CPU":
 
 
     with cpu4:
-        st.subheader("Intel gen 10")
+        st.subheader("Intel gen 10 series")
         st.image("zaki/kumpulan gambar/9126088_0d6b3035-4d20-4d61-8df3-39ac27acbdf8_700_700.jpg", caption="Intel I5 10400F")
         with st.popover("Press"):
             st.markdown("**Rp.1.635.000**")
@@ -230,8 +237,8 @@ elif st.session_state.page == "GPU":
     gpu1, gpu2, gpu3, gpu4 = st.columns(4)
 
     with gpu1:
-        st.subheader("Amd Rx")
-        st.image("zaki/kumpulan gambar/1024.png", caption="Radeon RX 580 GAMING X 8G")
+        st.subheader("Amd Rx series")
+        st.image(resize_image("zaki/kumpulan gambar/1024.png"), caption="Radeon RX 580 8G")
         with st.popover("Press"):
             st.markdown("**Rp. 1.650.000**")
             st.markdown("- Interface: PCI-E\
@@ -249,7 +256,7 @@ elif st.session_state.page == "GPU":
 
     with gpu2:
         st.subheader("Nvidia G series")
-        st.image("zaki/kumpulan gambar/1024 (1).png", caption="GTX 1660 Gaming X 6G")
+        st.image(resize_image("zaki/kumpulan gambar/1024 (1).png"), caption="GTX 1660 Gaming X 6G")
         with st.popover("Press"):
             st.markdown("**Rp. 1.679.000**")
             st.markdown("- Memory Amount : 6G\
@@ -275,8 +282,8 @@ elif st.session_state.page == "GPU":
 
 
     with gpu3:
-        st.subheader("Intel arc")
-        st.image("zaki/kumpulan gambar/e60d7796-d02c-486e-8c6a-dc94ed501ab8.png", caption="Intel ARC 750")
+        st.subheader("Intel arc series")
+        st.image(resize_image("zaki/kumpulan gambar/e60d7796-d02c-486e-8c6a-dc94ed501ab8.png"), caption="Intel ARC 750")
         with st.popover("Press"):
             st.markdown("**Rp. 3.499.000**")
             st.markdown("- Memory Size : 8 GB\
@@ -330,7 +337,7 @@ elif st.session_state.page == "SSD":
 
     with ssd1:
         st.subheader("SSD Sata")
-        st.image("zaki/kumpulan gambar/a8fe78da-a45e-4d76-9e82-51d4fcc02456.jpg", caption="Samsung SSD 870 EVO 500GB Sata 3")
+        st.image(resize_image("zaki/kumpulan gambar/4ccbb8c4-b46b-4382-93b0-5744db37c59d.jpg"), caption="Samsung SSD 870 EVO 500GB Sata 3")
         with st.popover("Press"):
             st.markdown("**Rp.821.000**")
             st.markdown("- Dimension (WxHxD) : 3.94 X 2.75  X 0.27\
