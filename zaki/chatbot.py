@@ -46,6 +46,16 @@ def chat_bot():
                 save_knowledge_base('knowledge_base.json', knowledge_base)
                 print('Bot: Thank you! I learned a new response!')
 
+def get_bot_response(user_input: str) -> str:
+    knowledge_base: dict = load_knowledge_base('knowledge_base.json')
+    
+    best_match: str | None = find_best_match(user_input, [q["question"] for q in knowledge_base["questions"]])
+    
+    if best_match:
+        answer: str = get_answer_for_question(best_match, knowledge_base)
+        return answer
+    else:
+        return "Maaf, saya tidak mengerti pertanyaan Anda. Silakan coba pertanyaan lain."
 
 if __name__ == '__main__':
     chat_bot()
