@@ -15,6 +15,28 @@ deskrip_GPU = ["**GPU** (Graphics Processing Unit), atau dalam bahasa Indonesia 
               untuk komputasi umum (GPGPU) seperti AI,\
               pembelajaran mesin, dan simulasi fisika."]
 
+deskrip_SSD = ["**SSD (Solid State Drive)** adalah jenis perangkat penyimpanan  data yang menggunakan memori\
+              flash untuk menyimpan informasi secara permanen. Tidak seperti HDD (Hard Disk Drive) yang\
+              menggunakan piringan magnetik dan kepala baca/tulis mekanis, SSD tidak memiliki komponen\
+              mekanis yang bergerak. Hal ini membuat SSD lebih cepat, lebih tahan lama,\
+              dan lebih hemat daya dibandingkan HDD."]
+deskrip_RAM = ["**RAM (Random Access Memory)** adalah jenis memori komputer yang digunakan\
+              untuk menyimpan data dan instruksi sementara yang sedang digunakan oleh\
+              prosesor. RAM berfungsi sebagai (memori kerja) komputer yang memungkinkan\
+              akses data yang cepat. Tidak seperti penyimpanan permanen seperti SSD atau\
+              HDD, data pada RAM bersifat volatil, yang berarti akan hilang ketika komputer dimatikan"]
+
+deskrip_PSU = ["**PSU (Power Supply Unit)** adalah komponen pada komputer yang berfungsi\
+              untuk mengubah arus listrik dari sumber daya (biasanya listrik AC dari\
+              stopkontak) menjadi arus listrik DC yang stabil untuk mendukung operasi\
+              komponen-komponen di dalam komputer, seperti motherboard, prosesor (CPU),\
+              kartu grafis (GPU), RAM, dan penyimpanan"]
+
+deskrip_COOLER = ["""Cooler untuk PC adalah perangkat yang dirancang untuk menghilangkan panas yang dihasilkan oleh
+ komponen-komponen komputer, terutama prosesor (CPU) dan kartu grafis (GPU). Cooler sangat penting untuk menjaga
+  suhu komponen tetap dalam batas aman, sehingga mencegah overheating yang dapat menurunkan performa atau bahkan
+   merusak perangkat keras."""]
+
 sp_satu = ["Supports 3rd Gen AMD AM4 Ryzen™ / Future AMD Ryzen™\
                         Processors 8 Power Phase Design, Digi Power\
                         Supports DDR4 4733+ (OC)\
@@ -145,3 +167,270 @@ sp_sebelas = ["- Memory Size : 8 GB\
                         \n - Render Slices : 7\
                         \n - Ray Tracing Units : 28\
                         \n - Intel® Xe Matrix Extensions (Intel® XMX) : Engines448"]
+
+sp_duabelas = ["- Dimension (WxHxD) : 3.94 X 2.75  X 0.27\
+                        \n - Weight : 89g.\
+                        \n - Performance : Speed Read/write speeds of up to 560/530 MB/s\
+                        \n - Encryption : Class 0 (AES 256) TCG/Opal v2.0, MS eDrive (IEEE1667)\
+                        \n - Type Interface : SATA 6 Gb/s Interface, compatible with SATA 3 Gb/s & SATA 1.5 Gb/s interface\
+                        \n - Usage Application : Client PCs / Laptops\
+                        \n - Sequential Read Speed : Up to 560 MB/s Sequential Read\
+                        \n - Sequential Write Speed : Up to 530 MB/s Sequential Write\
+                        \n - Cache Memory : Samsung 512 MB Low Power DDR4 SDRAM\
+                        \n - Trim Support : Yes\
+                        \n - S.M.A.R.T. Support : yes\
+                        \n - GC (Garbage Collection) : Auto Garbage Collection Algorithm\
+                        \n - WWN Support : yes\
+                        \n - Device Sleep Mode Support : Yes\
+                        \n - Average Power Consumption (system level) : Average: 2.2 W *Maximum: 3.5 W (Burst mode)\
+                        \n - Power consumption (Idle) : Max. 30 mW"]
+
+sp_tigabelas = ["- Tipe: 2,5 SATA3 6GB/S\
+                        \n - Kapasitas : 128GB\
+                        \n - Flash : 3D NAND FLASH\
+                        \n - Write Speed : Up To 570 MB/s\
+                        \n - Read Speed : Up To 470 MB/s\
+                        \n - Power Consumption : 5 V"]
+
+sp_empatbelas = ["- interface : PCIe gen3 x4, NVMe1.4\
+                        \n - Form factor : M.2 2280\
+                        \n - Max. sequential reading speed (MB/s) : 3300\
+                        \n - Max. sequential writing speed (MB/s) : 2700\
+                        \n - Random read speed (IOPS) : 402K\
+                        \n - Random write speed (IOPS) : 261K\
+                        \n - Treabytes written (TBW) : 600TBW"]
+
+sp_limabelas = ["- CL(IDD) 17 cycles\
+                        \n - Row Cycle Time (tRCmin) 45.75ns(min.)\
+                        \n - Refresh to Active/Refresh 350ns(min.)\
+                        \n - Command Time (tRFCmin)\
+                        \n - Row Active Time (tRASmin) 32ns(min.)\
+                        \n - UL Rating 94 V - 0\
+                        \n - DDR4 3200MHz"]
+
+sp_enambelas = ["- Memory Type : DDR3\
+                        \n - Form Factor : U-DIMM\
+                        \n - Capacity : 8GB\
+                        \n - Speeds : 1600\
+                        \n - Dimensions (LxWxH) : 133 x 30 x 3 mm"]
+
+sp_tujuhbelas = ["- Capacity : 16GB (8GBx2)\
+                        \n - Module Type : 288 Pin Unbuffered DIMM Non ECC\
+                        \n - Frequency : 3600\
+                        \n - Latency : CL18-22-22-42\
+                        \n - Data Transfer : 28,800 MB/s\
+                        \n - Bandwidth : (PC4 28800)\
+                        \n - Voltage : 1.35V\
+                        \n - Dimensions : 32(H) x 134(L) x 6.5(W)mm\
+                        \n - Heat Spreader : Aluminum heat spreader"]
+
+sp_delapanbelas = ["- Model Name : Predator Vesta II RGB Memory\
+                        \n - DRAM : DDR5 RGB UDIMM\
+                        \n - Capacity : 32GB (16GB x2) // 64GB (32GB x2)\
+                        \n - Frequency : 6000MHz\
+                        \n -  Timing :\
+                        \n  32GB: CL32\
+                        \n  64GB: CL30\
+                        \n - Working Voltage : 1.35 V\
+                        \n - Working Temperature : 0C to 85C\
+                        \n - Storage Temperature : -55C to 100C"]
+
+sp_19 = ["- MODEL MPE-5501-ACABW-B\
+                        \n - ATX VERSION ATX 12V V2.52\
+                        \n - PFC Active PFC\
+                        \n - INPUT VOLTAGE 200-240Vac\
+                        \n - INPUT CURRENT 5A\
+                        \n - INPUT FREQUENCY 50-60Hz\
+                        \n - DIMENSIONS (L X W X H) 140 x 150 x 86 mm\
+                        \n - FAN SIZE 120mm\
+                        \n - FAN BEARING HDB\
+                        \n - FAN SPEED 1500 RPM\
+                        \n - NOISE LEVEL @ 20% 13.8 dBA\
+                        \n - NOISE LEVEL @ 50% 18.4 dBA\
+                        \n - NOISE LEVEL @ 100% 31.2 dBA\
+                        \n - EFFICIENCY 88% Typically\
+                        \n - 80 PLUS RATING 80 PLUS Bronze EU 230V\
+                        \n - ERP 2014 LOT 3 Yes\
+                        \n - POWER GOOD SIGNAL 100-500ms\
+                        \n - HOLD UP TIME >14ms at 100% Full Load@230Vac\
+                        \n - MTBF >100,000 Hours\
+                        \n - PROTECTIONS OVP, OPP, SCP, UVP, OTP\
+                        \n - REGULATORY CCC, CE, TUV-RH, RCM, EAC, cTUVus, FCC, BSMI, KC, CB\
+                        \n - ATX 24-PIN CONNECTORS 1\
+                        \n - EPS 4+4 PIN CONNECTORS 1\
+                        \n - SATA CONNECTORS 6\
+                        \n - PERIPHERAL 4-PIN CONNECTORS 3\
+                        \n - PCI-E 6+2 PIN CONNECTORS 2\
+                        \n - SERIE MWE Bronze Series\
+                        \n - 80 PLUS Bronze\
+                        \n - MODULAR Non Modular\
+                        \n - WATTAGE 500 to 750W"]
+
+sp_20 = ["- AC Input 200-240VAC 5A 50-60Hz\
+                        \n - DC Output +3.3V +5V +12V -12V +5VSB\
+                        \n - Max Current 20A 20A 50A 0.3A 2.5A\
+                        \n - Max.Combined Power 120W 600W 3.6W 12.5W\
+                        \n - 650W\
+                        \n - EAN CODE 4718009156241"]
+
+sp_21 = ["- Weight 1.9\
+                        \n - Adjustable Single/Multi 12V Rail No\
+                        \n - ATX Connector 1\
+                        \n - ATX12V Version v2.31\
+                        \n - Continuous power W 750 Watts\
+                        \n - Fan bearing technology Sleeve\
+                        \n - Fan size mm 120mm\
+                        \n - MTBF hours 100,000 hours\
+                        \n - Multi-GPU ready No\
+                        \n - Warranty 3 Year\
+                        \n - PSU Form Factor ATX\
+                        \n - Zero RPM Mode No"]
+
+sp_22 = ["- PRODUCT SIZE : 120 x 73 x 155mm\
+                        \n - FAN SIZE : 120 x 120 x 25mm\
+                        \n - FAN SPEED : 1200 RPM + 10%\
+                        \n - WEIGHT : 550G\
+                        \n - CONNECTOR : 3PIN W/O PWM\
+                        \n - STARTING VOLTAGE : 7 VDC\
+                        \n - AIR FLOW : 41.6 CFM\
+                        \n - RATED VOLTAGE : 12 VDC\
+                        \n - BEARING TYPE : Hydro Bearing\
+                        \n - POWER CONSUMPTION : 1.3W + 10%\
+                        \n - NOISE : 26 dBA\
+                        \n - LIFE : 20.000 Hours\
+                        \n - LIGHTING EFFECT : ARGB\
+                        \n - BUCKLE : Double Platform Buckle\
+                        \n - COPPER PIPE QUANTITY 6\
+                        \n - BLADE QUANTITY 9\
+                        \n - INTEL LGA : 115X/1200/1700\
+                        \n - AMD : AM4/AM5"]
+
+sp_23 = ["- Max power dissipation, W\
+                        \n - TDP : 110W\
+                        \n - Number of heat pipes : 2\
+                        \n - Number of fans : 1\
+                        \n - Fan dimensions : 90 x 90 x 25 mm\
+                        \n - Rotational speed : 2200±10%RPM\
+                        \n - Noise level : 28.3dBA±10%\
+                        \n - Air flow : 39.6CFM\
+                        \n - Bearing type : Hydro Dynamic\
+                        \n - Connector type :3 -Pin\
+                        \n - Speed ​​controller (PWM) : Yes\
+                        \n - Height : 130 mm\
+                        \n - Backlight : No\
+                        \n - Dimensions (HxWxD) : 95*88*130 mm"]
+
+sp_24 = ["Fan Spesification :\
+                           \n - Fan Dimensions : 120*120*25m\
+                           \n - Material : PBT ,RoHS 2.0\
+                           \n - Bearing Type : Hydraulic bearing\
+                           \n - RPM : 800-1800RPM\
+                           \n - Air Flow : 58.2CFM\
+                           \n - Air Pressure : 0.92mm-H2O\
+                           \n - Fan Blade Quantity : 9pcs\
+                           \n - Cable Length : 500mm\
+                           \n - Connector/PWM : 4PIN PWM, 5V 3Pin AURA\
+                           \n - Lighting mode : ARGB inner 8PCS\
+                           \n - Quantity of fans : 2PCS\
+                           \n - Noise : ≤30dB-A\
+                           \n - Rated Voltage : DC 12V\
+                           \n - Working Voltage : DC 6-13.2V\
+                           \n - Start Voltage : ≥6V\
+                           \n - Rated Current : FAN:0.2A, LED 0.45A\
+                           \n - Fan Life : 30000Hrs\
+                           \n - Colour : Black\
+                           \n - TDP :250W"]
+
+sp_25 = [" - Net Weight 1570 g\
+                            \n - Radiator Dimensions 402x120x27 mm(LxWxH)\
+                            \n - Radiator Material Aluminum\
+                            \n - Tube length 410 mm(LxWxH)\
+                            \n - Pump Dimensions 91x80x52 mm(LxWxH)\
+                            \n - Pump Speed 2550 RPM±10%\
+                            \n - Pump Noise 17.8 dB(A)\
+                            \n - Pump Connector 3-pin\
+                            \n - Pump Rated Voltage 12 VDC\
+                            \n - Pump Rated Current 0.21 A\
+                            \n - Pump Power Consumption 2.52 W\
+                            \n - Fan Dimensions 120x120x25 mm(LxWxH)\
+                            \n - Fan Speed 500~2250RPM±10%\
+                            \n - Fan Airflow 85.85 CFM\
+                            \n - Fan Air Pressure 3.27 mmAq\
+                            \n - Fan Noise ≤32.9 dB(A)\
+                            \n - Fan Connector 4-pin PWM\
+                            \n - Bearing Type Hydro Bearing\
+                            \n - Fan Rated Voltage 12 VDC\
+                            \n - Fan Rated Current 0.25 A\
+                            \n - Fan Power Consumption 3.0 W\
+                            \n - LED Type Addressable RGB LED\
+                            \n - LED Connector 3-pin(+5V-D-G)\
+                            \n - LED Rated Voltage 5 VDC\
+                            \n - LED Power Consumption 2.25 W(PUMP)/ 3.15 W(FANx3)"]
+
+sp_26 = ["Model =InfinitiX\
+                         \n - Color =White\
+                         \n - Fan Dimensions =120x120x25mm\
+                         \n - Net Weight =132 g\
+                         \n - Fan Speed =1200RPM±10%\
+                         \n - Fan Airflow =50.3CFM\
+                         \n - Fan Noise =26.8dB\
+                         \n - Fan Rated Voltage =12V\
+                         \n - Fan Rated Current =0.28 A\
+                         \n - LED Type =ARGB\
+                         \n - Fan interface = 3pin, 3Pin ARGB\
+                         \n - Fan Life = 30000 Hours\
+                         \n - Working voltage = 12V DC\
+                         \n - 4-5Watt"]
+
+sp_27 = [" - Model =InfinitiX PL120\
+                         \n - Color =White\
+                         \n - Fan Dimensions =120x120x25.8mm\
+                         \n - Net Weight =155 g\
+                         \n - Fan Speed =800-1800RPM\
+                         \n - Fan Airflow =61.5CFM\
+                         \n - Fan Noise =6-30dB\
+                         \n - Fan Rated Voltage =12V\
+                         \n - Fan Rated Current =0.25 A\
+                         \n - LED Type =ARGB\
+                         \n - Fan interface = 4pin, 3Pin ARGB\
+                         \n - Fan Life = 30000 Hours\
+                         \n - Working voltage = 12V DC\
+                         \n - 4-5Watt"]
+
+sp_28 = [" - M/B Form Factor:ATX,MICRO ATX,ITX\
+                        \n - Front I/O Ports:USB3.0+USB1.0*2+AUDIO+MIC\
+                        \n - Dimensions of chassis:W190xH470xD415mm,with black painting on Inner chassis\
+                        \n - Bottom installation of PSU: YES\
+                        \n - Card reader:No,arcylic side panel\
+                        \n - Convex side panel:No\
+                        \n - Driver Bays:5.25″ eksternal*0;3.5″ HDD*2;2.5″SSD*2\
+                        \n - Support CPU Up to:160mm\
+                        \n - Support VGA Cards Up to:350mm\
+                        \n - PCI slot:7, pre-installed holes for Water Cooling:240\
+                        \n - HDD/SSD:2/2 PCS\
+                        \n - Support hidden cables:Yes"]
+
+sp_29 = ["- Color: White\
+                        \n - Dimensions: 380(L)x185(W)x425(H)\
+                        \n - Material: 0.7mm thick SPCC black steel plate\
+                        \n - Inner construction : 0.5mm steel plate\
+                        \n - Motherboard: ATX,M-ATX, ITX\
+                        \n - HD Device: 23.5,42.5\
+                        \n - Heat Removal System:\
+                        \n - Pront Plate : 2x12cm fan(Optional)\
+                        \n - Back Plate: 1x12cm fan(Optional)\
+                        \n - Front I/O: USB 3.01, USB 2.02,headset 1x\
+                        \n - Power Supply: PSII,PSU(ATX)\
+                        \n - Net wet: 4.3kg\
+                        \n - PCI Expension slots: 7\
+                        \n - Support VGA Card lenght: 370mm\
+                        \n - Support CPU Cooler Height: 150mm"]
+
+sp_30 = ["Motherboard Support	Micro ATX\
+                        \n                      Standard ATX\
+                        \n - Liquid Cooling Capable	No\
+                        \n - Power Supply Supported	Standard PS2\
+                        \n - Power Supply Included	Yes\
+                        \n - Dimension (H*W*D)	370(L)x180(W)x430(H) mm\
+                        \n - Net Weight	4.55 + 10Kgs\
+                        \n - Accecories	Screw Parts, Power Cable"]
