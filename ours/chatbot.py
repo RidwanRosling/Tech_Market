@@ -4,6 +4,11 @@ from difflib import get_close_matches
 # Fungsi untuk memuat file JSON
 def load_knowledge_base(file_path: str) -> dict:
     # Membuka file menggunakan `with` agar otomatis ditutup setelah selesai
+    """Penulisan data: dict menggunakan titik dua (:) adalah bagian dari type hinting di Python, seperti yang dijelaskan sebelumnya. Berikut adalah penjelasan rinci mengapa ditulis seperti itu dan apa fungsinya.
+    
+    1. Apa itu Type Hinting?
+    Type hinting adalah fitur Python untuk memberikan informasi tentang tipe data yang diharapkan oleh variabel atau fungsi. Ini diperkenalkan secara resmi di Python 3.5 melalui modul typing.
+    Pada kode di atas, data: dict adalah cara untuk menunjukkan bahwa variabel data diharapkan memiliki tipe data dict (dictionary)."""
     with open(file_path, 'r') as file:
         # Membaca isi file JSON dan mengonversinya menjadi dictionary
         data: dict = json.load(file)

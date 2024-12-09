@@ -50,17 +50,17 @@ if st.session_state.page == "Home":
     col1, col2, col3 = st.columns(3)
     with col1:
         st.header("Cpu")
-        st.image("zaki/kumpulan gambar/intel core i9 gen 14.jpg", caption="Intel core i9 14900K Box")
+        st.image("ours/kumpulan gambar/intel core i9 gen 14.jpg", caption="Intel core i9 14900K Box")
         st.button("Go to CPU page", key="switch_button_1", on_click=switch_page, args=("CPU",))
     
     with col2:
         st.header("Gpu")
-        st.image(resize_image("zaki/kumpulan gambar/Rtx4090.jpg"), caption="MSI GeForce RTX 4090 GAMING X TRIO 24GB GDDR6X")
+        st.image(resize_image("ours/kumpulan gambar/Rtx4090.jpg"), caption="MSI GeForce RTX 4090 GAMING X TRIO 24GB GDDR6X")
         st.button("Go to GPU page", key="switch_button_2", on_click=switch_page, args=("GPU",))
 
     with col3:
         st.header("Casing")
-        st.image("zaki/kumpulan gambar/casing techware.jpg", caption="TECWARE FLATLINE TG MK2")
+        st.image("ours/kumpulan gambar/casing techware.jpg", caption="TECWARE FLATLINE TG MK2")
         st.button("Go to Casing page", key="switch_button_3", on_click=switch_page, args=("Casing",))
 
 
@@ -71,7 +71,7 @@ elif st.session_state.page == "Motherboard":
     col4, col5, col6, col7 = st.columns(4)
     with col4:
         st.subheader("Asrock")
-        st.image("zaki/kumpulan gambar/mobo b550m pro4.jpg", caption="ASROCK B550M PRO4 AMD")
+        st.image("ours/kumpulan gambar/mobo b550m pro4.jpg", caption="ASROCK B550M PRO4 AMD")
         with st.popover("Press"):
             st.markdown("**Rp. 1.548.000**")
             st.markdown("Spesifikasi:")
@@ -81,7 +81,7 @@ elif st.session_state.page == "Motherboard":
 
     with col5:
         st.subheader("Srock")
-        st.image("zaki/kumpulan gambar/mobo b560m-hdv.jpg", caption="SROCK MOTHERBOARD B560M HDV M.2 R2.0 (INTEL)")
+        st.image("ours/kumpulan gambar/mobo b560m-hdv.jpg", caption="SROCK MOTHERBOARD B560M HDV M.2 R2.0 (INTEL)")
         with st.popover("Press"):
             st.markdown("**Rp. 1.250.000**")
             st.markdown("Spesifikasi:")
@@ -91,7 +91,7 @@ elif st.session_state.page == "Motherboard":
 
     with col6:
         st.subheader("Asrock")
-        st.image("zaki/kumpulan gambar/mobo a520m-hvs.jpg", caption="ASROCK MOTHERBOARD A520M-HVS (AMD)")
+        st.image("ours/kumpulan gambar/mobo a520m-hvs.jpg", caption="ASROCK MOTHERBOARD A520M-HVS (AMD)")
         with st.popover("Press"):
             st.markdown("**Rp. 989.000**")
             st.markdown("Spesifikasi:")
@@ -101,7 +101,7 @@ elif st.session_state.page == "Motherboard":
 
     with col7:
         st.subheader("Asus")
-        st.image("zaki/kumpulan gambar/mobo rog strix.jpg", caption="ASUS Motherbord ROG STRIX B460-F GAMING")
+        st.image("ours/kumpulan gambar/mobo rog strix.jpg", caption="ASUS Motherbord ROG STRIX B460-F GAMING")
         with st.popover("Press"):
             st.markdown("**Rp.3.300.000**")
             st.markdown("Spesifikasi:")
@@ -117,7 +117,7 @@ elif st.session_state.page == "CPU":
     cpu1, cpu2, cpu3, cpu4 = st.columns(4)
     with cpu1:
         st.subheader("Amd ryzen 5000 series")
-        st.image(resize_image("zaki/kumpulan gambar/Cpu ryzen 5000 series.jpg"), caption="AMD Ryzen 9 5900X")
+        st.image(resize_image("ours/kumpulan gambar/Cpu ryzen 5000 series.jpg"), caption="AMD Ryzen 9 5900X")
         with st.popover("Press"):
             st.markdown("**Rp. 5.730.000**")
             st.markdown((" ".join(sp_empat)))
@@ -126,7 +126,7 @@ elif st.session_state.page == "CPU":
 
     with cpu2:
         st.subheader("Intel pentium Gold")
-        st.image("zaki/kumpulan gambar/cpu pentium gold.jpg", caption="intel pentium G5420")
+        st.image("ours/kumpulan gambar/cpu pentium gold.jpg", caption="intel pentium G5420")
         with st.popover("Press"):
             st.markdown("**Rp.840.000**")
             st.markdown((" ".join(sp_lima)))
@@ -135,7 +135,7 @@ elif st.session_state.page == "CPU":
 
     with cpu3:
         st.subheader("Amd ryzen 3000 series")
-        st.image(resize_image("zaki/kumpulan gambar/cpu ryzen 3000 series.jpg"), caption="Ryzen 5 3600")
+        st.image(resize_image("ours/kumpulan gambar/cpu ryzen 3000 series.jpg"), caption="Ryzen 5 3600")
         with st.popover("Press"):
             st.markdown("**Rp.2.020.000**")
             st.markdown((" ".join(sp_enam)))
@@ -144,7 +144,7 @@ elif st.session_state.page == "CPU":
 
     with cpu4:
         st.subheader("Intel gen 10 series")
-        st.image("zaki/kumpulan gambar/cpu intel gen 10.jpg", caption="Intel I5 10400F")
+        st.image("ours/kumpulan gambar/cpu intel gen 10.jpg", caption="Intel I5 10400F")
         with st.popover("Press"):
             st.markdown("**Rp.1.635.000**")
             st.markdown((" ".join(sp_tujuh)))
@@ -159,7 +159,7 @@ elif st.session_state.page == "GPU":
 
     with gpu1:
         st.subheader("Amd Rx series")
-        st.image(resize_image("zaki/kumpulan gambar/gpu rx580.png"), caption="Radeon RX 580 8G")
+        st.image(resize_image("ours/kumpulan gambar/gpu rx580.png"), caption="Radeon RX 580 8G")
         with st.popover("Press"):
             st.markdown("**Rp. 1.650.000**")
             st.markdown((" ".join(sp_delapan)))
@@ -167,7 +167,7 @@ elif st.session_state.page == "GPU":
 
     with gpu2:
         st.subheader("Nvidia G series")
-        st.image(resize_image("zaki/kumpulan gambar/gpu gtx 1660.png"), caption="GTX 1660 Gaming X 6G")
+        st.image(resize_image("ours/kumpulan gambar/gpu gtx 1660.png"), caption="GTX 1660 Gaming X 6G")
         with st.popover("Press"):
             st.markdown("**Rp. 1.679.000**")
             st.markdown((" ".join(sp_sembilan)))
@@ -176,7 +176,7 @@ elif st.session_state.page == "GPU":
 
     with gpu3:
         st.subheader("Intel arc series")
-        st.image(resize_image("zaki/kumpulan gambar/gpu intel arc 750.png"), caption="Intel ARC 750")
+        st.image(resize_image("ours/kumpulan gambar/gpu intel arc 750.png"), caption="Intel ARC 750")
         with st.popover("Press"):
             st.markdown("**Rp. 3.499.000**")
             st.markdown((" ".join(sp_sepuluh)))
@@ -185,7 +185,7 @@ elif st.session_state.page == "GPU":
 
     with gpu4:
         st.subheader("Amd Radeon RX")
-        st.image("zaki/kumpulan gambar/amd radeon RX 6700xt.png", caption="Amd radeon RX 6700xt")
+        st.image("ours/kumpulan gambar/amd radeon RX 6700xt.png", caption="Amd radeon RX 6700xt")
         with st.popover("Press"):
             st.markdown("**Rp. 3.821.000**")
             st.markdown((" ".join(sp_sebelas)))
@@ -200,7 +200,7 @@ elif st.session_state.page == "SSD":
 
     with ssd1:
         st.subheader("SSD Sata")
-        st.image(resize_image("zaki/kumpulan gambar/ssd sata samsung.jpg"), caption="Samsung SSD 870 EVO 500GB Sata 3")
+        st.image(resize_image("ours/kumpulan gambar/ssd sata samsung.jpg"), caption="Samsung SSD 870 EVO 500GB Sata 3")
         with st.popover("Press"):
             st.markdown("**Rp.821.000**")
             st.markdown(" ".join(sp_duabelas))
@@ -208,7 +208,7 @@ elif st.session_state.page == "SSD":
 
     with ssd2:
         st.subheader("SSD NVMe")
-        st.image("zaki/kumpulan gambar/ssd nvme crucial.png", caption="Crucial SSD P3 Plus PCIe Gen4 M.2 NVMe")
+        st.image("ours/kumpulan gambar/ssd nvme crucial.png", caption="Crucial SSD P3 Plus PCIe Gen4 M.2 NVMe")
         with st.popover("Press"):
             st.markdown("**Rp.690.000**")
             st.markdown("Size : 500GB, Read/write: 4700/1900Mb/s, TBW 110")
@@ -216,7 +216,7 @@ elif st.session_state.page == "SSD":
 
     with ssd3:
         st.subheader("SSD SATA")
-        st.image("zaki/kumpulan gambar/ssd sata kyo kaizen.jpg", caption="SSD KYO KAIZEN 128GB SATA III 2.5 6GB/S SSD SATA 3")
+        st.image("ours/kumpulan gambar/ssd sata kyo kaizen.jpg", caption="SSD KYO KAIZEN 128GB SATA III 2.5 6GB/S SSD SATA 3")
         with st.popover("Press"):
             st.markdown("**Rp.145.000**")
             st.markdown(" ".join(sp_tigabelas))
@@ -224,7 +224,7 @@ elif st.session_state.page == "SSD":
 
     with ssd4:
         st.subheader("SSD NVMe")
-        st.image("zaki/kumpulan gambar/ssd nvme acer fa100.jpg", caption="ACER FA100 M.2 NVMe PCIe Gen3 x4 SSD - 1TB")
+        st.image("ours/kumpulan gambar/ssd nvme acer fa100.jpg", caption="ACER FA100 M.2 NVMe PCIe Gen3 x4 SSD - 1TB")
         with st.popover("Press"):
             st.markdown("**Rp.919.000**")
             st.markdown(" ".join(sp_empatbelas))
@@ -239,7 +239,7 @@ elif st.session_state.page == "RAM":
 
     with ram1:
         st.subheader("Ram DDR4")
-        st.image("zaki/kumpulan gambar/ram ddr4 kingston fury.png", caption="RAM Kingston Fury Beast RGB DDR4 3200MHz (PC25600) 8GB (1x8GB)")
+        st.image("ours/kumpulan gambar/ram ddr4 kingston fury.png", caption="RAM Kingston Fury Beast RGB DDR4 3200MHz (PC25600) 8GB (1x8GB)")
         with st.popover("Press"):
             st.markdown("**Rp.375.000**")
             st.markdown(" ".join(sp_limabelas))
@@ -247,7 +247,7 @@ elif st.session_state.page == "RAM":
 
     with ram2:
         st.subheader("Ram DDR3")
-        st.image("zaki/kumpulan gambar/ram ddr3 enpc.jpg", caption="RAM EnPC LONGDIMM DDR3 8GB 1600Mhz")
+        st.image("ours/kumpulan gambar/ram ddr3 enpc.jpg", caption="RAM EnPC LONGDIMM DDR3 8GB 1600Mhz")
         with st.popover("Press"):
             st.markdown("**Rp.92.000**")
             st.markdown(" ".join(sp_enambelas))
@@ -255,7 +255,7 @@ elif st.session_state.page == "RAM":
 
     with ram3:
         st.subheader("Ram DDR4")
-        st.image("zaki/kumpulan gambar/ram ddr4 teamgroup.jpg", caption="Team Ram T-Create Expert 16GB Kit (8GBX2) DDR 4 PC3600")
+        st.image("ours/kumpulan gambar/ram ddr4 teamgroup.jpg", caption="Team Ram T-Create Expert 16GB Kit (8GBX2) DDR 4 PC3600")
         with st.popover("Press"):
             st.markdown("**Rp. 495.000**")
             st.markdown(" ".join(sp_tujuhbelas))
@@ -263,7 +263,7 @@ elif st.session_state.page == "RAM":
     
     with ram4:
         st.subheader("Ram DDR5")
-        st.image("zaki/kumpulan gambar/ram ddr 5 predator vesta.png", caption="PREDATOR VESTA II DDR5 6000 MHz RGB U-DIMM [Desktop RAM] - 32GB KIT")
+        st.image("ours/kumpulan gambar/ram ddr 5 predator vesta.png", caption="PREDATOR VESTA II DDR5 6000 MHz RGB U-DIMM [Desktop RAM] - 32GB KIT")
         with st.popover("Press"):
             st.markdown("**Rp.1.899.000**")
             st.markdown(" ".join(sp_delapanbelas))
@@ -278,7 +278,7 @@ elif st.session_state.page == "PSU":
 
     with psu1:
         st.subheader("PSU 550W")
-        st.image("zaki/kumpulan gambar/psu coolermaster 550w.jpg", caption="Cooler Master MWE 550 V2 - 550W")
+        st.image("ours/kumpulan gambar/psu coolermaster 550w.jpg", caption="Cooler Master MWE 550 V2 - 550W")
         with st.popover("Press"):
             st.markdown("**Rp. 770.000**")
             st.markdown(" ".join(sp_19))
@@ -287,7 +287,7 @@ elif st.session_state.page == "PSU":
     
     with psu2:
         st.subheader("PSU 650W")
-        st.image("zaki/kumpulan gambar/psu aerocool lux 650w.jpg", caption="Aerocool LUX 650W 80+ Bronze ATX PSU")
+        st.image("ours/kumpulan gambar/psu aerocool lux 650w.jpg", caption="Aerocool LUX 650W 80+ Bronze ATX PSU")
         with st.popover("Press"):
             st.markdown("**RP. 649.000**")
             st.markdown(" ".join(sp_20))
@@ -296,7 +296,7 @@ elif st.session_state.page == "PSU":
 
     with psu3:
         st.subheader("PSU 750W")
-        st.image("zaki/kumpulan gambar/psu corsair cv 750w.jpg",  caption="CV Series CV750 750 Watt 80 Plus Bronze")
+        st.image("ours/kumpulan gambar/psu corsair cv 750w.jpg",  caption="CV Series CV750 750 Watt 80 Plus Bronze")
         with st.popover("Press"):
             st.markdown("**Rp. 939.000**")
             st.markdown(" ".join(sp_21))
@@ -312,7 +312,7 @@ elif st.session_state.page == "Cooler":
         cpu_cooler1, cpu_cooler2 = st.columns(2)
         with cpu_cooler1:
             st.subheader("Armaggedon CPU Cooler")
-            st.image("zaki/kumpulan gambar/air cooler armaggedon.png", caption="Armaggeddon Air Cooler Blizzard 3 ARGB PC Cooler 6 Heat Pipes Direct Contact Technology")
+            st.image("ours/kumpulan gambar/air cooler armaggedon.png", caption="Armaggeddon Air Cooler Blizzard 3 ARGB PC Cooler 6 Heat Pipes Direct Contact Technology")
             with st.popover("Press"):
                 st.markdown("**Rp. 270.000**")
                 st.markdown(" ".join(sp_22))
@@ -320,7 +320,7 @@ elif st.session_state.page == "Cooler":
 
     with cpu_cooler2:
         st.subheader("PcCooler CPU Cooler")
-        st.image("zaki/kumpulan gambar/air cooler pccooler.jpg", caption="PCCOOLER Air Cooler / PC COOLER R200")
+        st.image("ours/kumpulan gambar/air cooler pccooler.jpg", caption="PCCOOLER Air Cooler / PC COOLER R200")
         with st.popover("Press"):
             st.markdown("**Rp. 145.000**")
             st.markdown(" ".join(sp_23))
@@ -331,7 +331,7 @@ elif st.session_state.page == "Cooler":
 
     with aio_cooler1:
           st.subheader("KYO Liquid Cooler")
-          st.image("zaki/kumpulan gambar/liquid cooler kyo sama.jpg", caption="KYO SAMA PI240B ARGB AIO Liquid Cooling 240mm AIO 240")
+          st.image("ours/kumpulan gambar/liquid cooler kyo sama.jpg", caption="KYO SAMA PI240B ARGB AIO Liquid Cooling 240mm AIO 240")
           with st.popover("Press"):
                st.markdown("**Rp. 770.000**")
                st.markdown(" ".join(sp_24))
@@ -339,7 +339,7 @@ elif st.session_state.page == "Cooler":
     
     with aio_cooler2:
         st.subheader("DeepCool Liquid Cooler")
-        st.image("zaki/kumpulan gambar/liquid cooler deepcool.jpg", caption="DeepCool LE720 ARGB - 360mm AIO Liquid")
+        st.image("ours/kumpulan gambar/liquid cooler deepcool.jpg", caption="DeepCool LE720 ARGB - 360mm AIO Liquid")
         with st.popover("Press"):
                 st.markdown("**Rp. 1.079.000**")
                 st.markdown(" ".join(sp_25))
@@ -350,7 +350,7 @@ elif st.session_state.page == "Cooler":
     
      with pc_cooler1:
         st.subheader("KYO Fan Cooler")
-        st.image(resize_image("zaki/kumpulan gambar/pc cooler kyo1.png"), caption="KYO InfinitiX Fan ARGB 120mm ARGB Sync")
+        st.image(resize_image("ours/kumpulan gambar/pc cooler kyo1.png"), caption="KYO InfinitiX Fan ARGB 120mm ARGB Sync")
         with st.popover("Press"):
              st.markdown("**Rp. 69.000**")
              st.markdown(" ".join(sp_26))
@@ -358,7 +358,7 @@ elif st.session_state.page == "Cooler":
 
      with pc_cooler2:
         st.subheader("KYO Fan Cooler")
-        st.image(resize_image("zaki/kumpulan gambar/pc cooler kyo2.jpg"), caption="KYO InfinitiX PL120 Fan ARGB 120mm ARGB ")
+        st.image(resize_image("ours/kumpulan gambar/pc cooler kyo2.jpg"), caption="KYO InfinitiX PL120 Fan ARGB 120mm ARGB ")
         with st.popover("Press"):
              st.markdown("**Rp. 125.000**")
              st.markdown(" ".join(sp_27))
@@ -375,7 +375,7 @@ elif st.session_state.page == "Casing":
 
     with case1:
         st.subheader("Case sades")
-        st.image("zaki/kumpulan gambar/case sades.jpg", caption="Case Sades Seth")
+        st.image("ours/kumpulan gambar/case sades.jpg", caption="Case Sades Seth")
         with st.popover("Press"):
             st.markdown("**Rp. 450.000**")
             st.markdown(" ".join(sp_28))
@@ -383,7 +383,7 @@ elif st.session_state.page == "Casing":
 
     with case2:
         st.subheader("Case sades")
-        st.image("zaki/kumpulan gambar/case sades2.jpg", caption="Case Sades Sphinx White")
+        st.image("ours/kumpulan gambar/case sades2.jpg", caption="Case Sades Sphinx White")
         with st.popover("Press"):
             st.markdown("**Rp. 455.000**")
             st.markdown(" ".join(sp_29))
@@ -391,7 +391,7 @@ elif st.session_state.page == "Casing":
 
     with case3:
         st.subheader("Case Da")
-        st.image("zaki/kumpulan gambar/case digial alliance.jpg", caption="Casing Digital Alliance 335B")
+        st.image("ours/kumpulan gambar/case digial alliance.jpg", caption="Casing Digital Alliance 335B")
         with st.popover("Press"):
             st.markdown("**Rp. 395.000**")
             st.markdown(" ".join(sp_30))

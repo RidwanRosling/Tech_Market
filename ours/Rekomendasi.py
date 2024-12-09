@@ -5,7 +5,7 @@ st.title("Rekomendasi Produk Tech")
 
 # Baca data dari knowledge_base.json
 try:
-    with open('zaki/knowledge_base.json', 'r') as file:
+    with open('ours/knowledge_base.json', 'r') as file:
         knowledge_base = json.load(file)
 except FileNotFoundError:
     st.error("File knowledge_base.json tidak ditemukan!")

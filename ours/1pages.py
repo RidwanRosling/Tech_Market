@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.logo("zaki/kumpulan gambar/Logo1.png",size="large")
+st.logo("ours/kumpulan gambar/Logo1.png",size="large")
 
 pages = {
     "🖥️-🦖": [
