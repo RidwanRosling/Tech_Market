@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 
+
 # Fungsi untuk mengubah ukuran gambar
 def resize_image(image_path, size=(300, 300)):
     img = Image.open(image_path)
@@ -49,17 +50,17 @@ if st.session_state.page == "Home":
     col1, col2, col3 = st.columns(3)
     with col1:
         st.header("Cpu")
-        st.image("zaki/kumpulan gambar/53bc3a1d-cf61-41d7-91f4-2124dbde60d9.jpg", caption="Intel core i9 14900K Box")
+        st.image("zaki/kumpulan gambar/intel core i9 gen 14.jpg", caption="Intel core i9 14900K Box")
         st.button("Go to CPU page", key="switch_button_1", on_click=switch_page, args=("CPU",))
     
     with col2:
         st.header("Gpu")
-        st.image(resize_image("zaki/kumpulan gambar/d909e419-85d0-476f-995d-4e2476f310c8.jpg"), caption="MSI GeForce RTX 4090 GAMING X TRIO 24GB GDDR6X")
+        st.image(resize_image("zaki/kumpulan gambar/Rtx4090.jpg"), caption="MSI GeForce RTX 4090 GAMING X TRIO 24GB GDDR6X")
         st.button("Go to GPU page", key="switch_button_2", on_click=switch_page, args=("GPU",))
 
     with col3:
         st.header("Casing")
-        st.image("zaki/kumpulan gambar/b70fc2df-20f4-4626-ad91-1de714210895.jpg", caption="TECWARE FLATLINE TG MK2")
+        st.image("zaki/kumpulan gambar/casing techware.jpg", caption="TECWARE FLATLINE TG MK2")
         st.button("Go to Casing page", key="switch_button_3", on_click=switch_page, args=("Casing",))
 
 
@@ -71,7 +72,7 @@ elif st.session_state.page == "Motherboard":
     col4, col5, col6, col7 = st.columns(4)
     with col4:
         st.subheader("Asrock")
-        st.image("zaki/kumpulan gambar/13757756_509be07d-f324-4df7-832e-e3b0d0009bcd_600_600.jpg", caption="ASROCK B550M PRO4 AMD")
+        st.image("zaki/kumpulan gambar/mobo b550m pro4.jpg", caption="ASROCK B550M PRO4 AMD")
         with st.popover("Press"):
             st.markdown("**Rp. 1.548.000**")
             st.markdown("Spesifikasi:")
@@ -90,7 +91,7 @@ elif st.session_state.page == "Motherboard":
 
     with col5:
         st.subheader("Srock")
-        st.image("zaki/kumpulan gambar/20221111162833.jpg", caption="SROCK MOTHERBOARD B560M HDV M.2 R2.0 (INTEL)")
+        st.image("zaki/kumpulan gambar/mobo b560m-hdv.jpg", caption="SROCK MOTHERBOARD B560M HDV M.2 R2.0 (INTEL)")
         with st.popover("Press"):
             st.markdown("**Rp. 1.250.000**")
             st.markdown("Spesifikasi:")
@@ -115,7 +116,7 @@ elif st.session_state.page == "Motherboard":
 
     with col6:
         st.subheader("Asrock")
-        st.image("zaki/kumpulan gambar/20221115104303.jpg", caption="ASROCK MOTHERBOARD A520M-HVS (AMD)")
+        st.image("zaki/kumpulan gambar/mobo a520m-hvs.jpg", caption="ASROCK MOTHERBOARD A520M-HVS (AMD)")
         with st.popover("Press"):
             st.markdown("**Rp. 989.000**")
             st.markdown("Spesifikasi:")
@@ -142,7 +143,7 @@ elif st.session_state.page == "Motherboard":
 
     with col7:
         st.subheader("Asus")
-        st.image("zaki/kumpulan gambar/20200617162250.jpg", caption="ASUS Motherbord ROG STRIX B460-F GAMING")
+        st.image("zaki/kumpulan gambar/mobo rog strix.jpg", caption="ASUS Motherbord ROG STRIX B460-F GAMING")
         with st.popover("Press"):
             st.markdown("**Rp.3.300.000**")
             st.markdown("Spesifikasi:")
@@ -164,7 +165,7 @@ elif st.session_state.page == "CPU":
     cpu1, cpu2, cpu3, cpu4 = st.columns(4)
     with cpu1:
         st.subheader("Amd ryzen 5000 series")
-        st.image(resize_image("zaki/kumpulan gambar/cea0c491-d4f5-43da-974b-cb5c06597b95.jpg"), caption="AMD Ryzen 9 5900X")
+        st.image(resize_image("zaki/kumpulan gambar/Cpu ryzen 5000 series.jpg"), caption="AMD Ryzen 9 5900X")
         with st.popover("Press"):
             st.markdown("**Rp. 5.730.000**")
             st.markdown("- 12 Core\n - 24 threads\n - Base clock 3.4Ghz\n - Max clock up to 4.8GhzTotal L2 Cache 6MB\n - Total L3 Cache 64MB\n - Unlocked Yes\
@@ -174,7 +175,7 @@ elif st.session_state.page == "CPU":
 
     with cpu2:
         st.subheader("Intel pentium Gold")
-        st.image("zaki/kumpulan gambar/20200611151837_th.jpg", caption="intel pentium G5420")
+        st.image("zaki/kumpulan gambar/cpu pentium gold.jpg", caption="intel pentium G5420")
         with st.popover("Press"):
             st.markdown("**Rp.840.000**")
             st.markdown("- CPU Socket Type : LGA 1151\n - Processors Generation : 9th Gen\n - Family : Coffeelake\n - Cores : 2\n\
@@ -185,7 +186,7 @@ elif st.session_state.page == "CPU":
 
     with cpu3:
         st.subheader("Amd ryzen 3000 series")
-        st.image(resize_image("zaki/kumpulan gambar/f9b52508-10b7-416f-85fb-a6dfc883c0a2.jpg"), caption="Ryzen 5 3600")
+        st.image(resize_image("zaki/kumpulan gambar/cpu ryzen 3000 series.jpg"), caption="Ryzen 5 3600")
         with st.popover("Press"):
             st.markdown("**Rp.2.020.000**")
             st.markdown("- 6 core\
@@ -214,7 +215,7 @@ elif st.session_state.page == "CPU":
 
     with cpu4:
         st.subheader("Intel gen 10 series")
-        st.image("zaki/kumpulan gambar/9126088_0d6b3035-4d20-4d61-8df3-39ac27acbdf8_700_700.jpg", caption="Intel I5 10400F")
+        st.image("zaki/kumpulan gambar/cpu intel gen 10.jpg", caption="Intel I5 10400F")
         with st.popover("Press"):
             st.markdown("**Rp.1.635.000**")
             st.markdown("- 6 Core\
@@ -240,7 +241,7 @@ elif st.session_state.page == "GPU":
 
     with gpu1:
         st.subheader("Amd Rx series")
-        st.image(resize_image("zaki/kumpulan gambar/1024.png"), caption="Radeon RX 580 8G")
+        st.image(resize_image("zaki/kumpulan gambar/gpu rx580.png"), caption="Radeon RX 580 8G")
         with st.popover("Press"):
             st.markdown("**Rp. 1.650.000**")
             st.markdown("- Interface: PCI-E\
@@ -258,7 +259,7 @@ elif st.session_state.page == "GPU":
 
     with gpu2:
         st.subheader("Nvidia G series")
-        st.image(resize_image("zaki/kumpulan gambar/1024 (1).png"), caption="GTX 1660 Gaming X 6G")
+        st.image(resize_image("zaki/kumpulan gambar/gpu gtx 1660.png"), caption="GTX 1660 Gaming X 6G")
         with st.popover("Press"):
             st.markdown("**Rp. 1.679.000**")
             st.markdown("- Memory Amount : 6G\
@@ -285,7 +286,7 @@ elif st.session_state.page == "GPU":
 
     with gpu3:
         st.subheader("Intel arc series")
-        st.image(resize_image("zaki/kumpulan gambar/e60d7796-d02c-486e-8c6a-dc94ed501ab8.png"), caption="Intel ARC 750")
+        st.image(resize_image("zaki/kumpulan gambar/gpu intel arc 750.png"), caption="Intel ARC 750")
         with st.popover("Press"):
             st.markdown("**Rp. 3.499.000**")
             st.markdown("- Memory Size : 8 GB\
@@ -339,7 +340,7 @@ elif st.session_state.page == "SSD":
 
     with ssd1:
         st.subheader("SSD Sata")
-        st.image(resize_image("zaki/kumpulan gambar/4ccbb8c4-b46b-4382-93b0-5744db37c59d.jpg"), caption="Samsung SSD 870 EVO 500GB Sata 3")
+        st.image(resize_image("zaki/kumpulan gambar/ssd sata samsung.jpg"), caption="Samsung SSD 870 EVO 500GB Sata 3")
         with st.popover("Press"):
             st.markdown("**Rp.821.000**")
             st.markdown("- Dimension (WxHxD) : 3.94 X 2.75  X 0.27\
@@ -362,7 +363,7 @@ elif st.session_state.page == "SSD":
 
     with ssd2:
         st.subheader("SSD NVMe")
-        st.image("zaki/kumpulan gambar/9c4fd703-0174-49d8-bb13-3a1e6f80cd63.png", caption="Crucial SSD P3 Plus PCIe Gen4 M.2 NVMe")
+        st.image("zaki/kumpulan gambar/ssd nvme crucial.png", caption="Crucial SSD P3 Plus PCIe Gen4 M.2 NVMe")
         with st.popover("Press"):
             st.markdown("**Rp.690.000**")
             st.markdown("Size : 500GB, Read/write: 4700/1900Mb/s, TBW 110")
@@ -370,7 +371,7 @@ elif st.session_state.page == "SSD":
 
     with ssd3:
         st.subheader("SSD SATA")
-        st.image("zaki/kumpulan gambar/d136092d-c8a8-45cd-b548-8590dec76d04.jpg", caption="SSD KYO KAIZEN 128GB SATA III 2.5 6GB/S SSD SATA 3")
+        st.image("zaki/kumpulan gambar/ssd sata kyo kaizen.jpg", caption="SSD KYO KAIZEN 128GB SATA III 2.5 6GB/S SSD SATA 3")
         with st.popover("Press"):
             st.markdown("**Rp.145.000**")
             st.markdown("- Tipe: 2,5 SATA3 6GB/S\
@@ -383,7 +384,7 @@ elif st.session_state.page == "SSD":
 
     with ssd4:
         st.subheader("SSD NVMe")
-        st.image("zaki/kumpulan gambar/fd2e1dee-335d-465b-a9e3-701c2238c603.jpg", caption="ACER FA100 M.2 NVMe PCIe Gen3 x4 SSD - 1TB")
+        st.image("zaki/kumpulan gambar/ssd nvme acer fa100.jpg", caption="ACER FA100 M.2 NVMe PCIe Gen3 x4 SSD - 1TB")
         with st.popover("Press"):
             st.markdown("**Rp.919.000**")
             st.markdown("- interface : PCIe gen3 x4, NVMe1.4\
@@ -408,7 +409,7 @@ elif st.session_state.page == "RAM":
 
     with ram1:
         st.subheader("Ram DDR4")
-        st.image("zaki/kumpulan gambar/2e8569ef-3f2a-4142-8b4b-827d1374c96c.png", caption="RAM Kingston Fury Beast RGB DDR4 3200MHz (PC25600) 8GB (1x8GB)")
+        st.image("zaki/kumpulan gambar/ram ddr4 kingston fury.png", caption="RAM Kingston Fury Beast RGB DDR4 3200MHz (PC25600) 8GB (1x8GB)")
         with st.popover("Press"):
             st.markdown("**Rp.375.000**")
             st.markdown("- CL(IDD) 17 cycles\
@@ -422,7 +423,7 @@ elif st.session_state.page == "RAM":
 
     with ram2:
         st.subheader("Ram DDR3")
-        st.image("zaki/kumpulan gambar/d7e77d83-d5db-42e9-a2a6-a3923df5793d.jpg", caption="RAM EnPC LONGDIMM DDR3 8GB 1600Mhz")
+        st.image("zaki/kumpulan gambar/ram ddr3 enpc.jpg", caption="RAM EnPC LONGDIMM DDR3 8GB 1600Mhz")
         with st.popover("Press"):
             st.markdown("**Rp.92.000**")
             st.markdown("- Memory Type : DDR3\
@@ -434,7 +435,7 @@ elif st.session_state.page == "RAM":
 
     with ram3:
         st.subheader("Ram DDR4")
-        st.image("zaki/kumpulan gambar/eb13cfa9-5667-46ef-8d48-8868723cf4f7.jpg", caption="Team Ram T-Create Expert 16GB Kit (8GBX2) DDR 4 PC3600")
+        st.image("zaki/kumpulan gambar/ram ddr4 teamgroup.jpg", caption="Team Ram T-Create Expert 16GB Kit (8GBX2) DDR 4 PC3600")
         with st.popover("Press"):
             st.markdown("**Rp. 495.000**")
             st.markdown("- Capacity : 16GB (8GBx2)\
@@ -450,7 +451,7 @@ elif st.session_state.page == "RAM":
     
     with ram4:
         st.subheader("Ram DDR5")
-        st.image("zaki/kumpulan gambar/1eb5bb92-3439-4b10-b2cb-ad031736ae25.png", caption="PREDATOR VESTA II DDR5 6000 MHz RGB U-DIMM [Desktop RAM] - 32GB KIT")
+        st.image("zaki/kumpulan gambar/ram ddr 5 predator vesta.png", caption="PREDATOR VESTA II DDR5 6000 MHz RGB U-DIMM [Desktop RAM] - 32GB KIT")
         with st.popover("Press"):
             st.markdown("**Rp.1.899.000**")
             st.markdown("- Model Name : Predator Vesta II RGB Memory\
@@ -478,7 +479,7 @@ elif st.session_state.page == "PSU":
 
     with psu1:
         st.subheader("PSU 550W")
-        st.image("zaki/kumpulan gambar/9126088_a9b9de8d-fb27-411f-bc8e-cfe52048fe45_700_700.jpg", caption="Cooler Master MWE 550 V2 - 550W")
+        st.image("zaki/kumpulan gambar/psu coolermaster 550w.jpg", caption="Cooler Master MWE 550 V2 - 550W")
         with st.popover("Press"):
             st.markdown("**Rp. 770.000**")
             st.markdown("- MODEL MPE-5501-ACABW-B\
@@ -516,7 +517,7 @@ elif st.session_state.page == "PSU":
     
     with psu2:
         st.subheader("PSU 650W")
-        st.image("zaki/kumpulan gambar/aa9ab9f6-4514-4664-9a6a-4c0ed60fc8e3.jpg", caption="Aerocool LUX 650W 80+ Bronze ATX PSU")
+        st.image("zaki/kumpulan gambar/psu aerocool lux 650w.jpg", caption="Aerocool LUX 650W 80+ Bronze ATX PSU")
         with st.popover("Press"):
             st.markdown("**RP. 649.000**")
             st.markdown("- AC Input 200-240VAC 5A 50-60Hz\
@@ -530,7 +531,7 @@ elif st.session_state.page == "PSU":
 
     with psu3:
         st.subheader("PSU 750W")
-        st.image("zaki/kumpulan gambar/40877f9f-1898-4e03-99d4-faf44b789030.jpg",  caption="CV Series CV750 750 Watt 80 Plus Bronze")
+        st.image("zaki/kumpulan gambar/psu corsair cv 750w.jpg",  caption="CV Series CV750 750 Watt 80 Plus Bronze")
         with st.popover("Press"):
             st.markdown("**Rp. 939.000**")
             st.markdown("- Weight 1.9\
@@ -560,7 +561,7 @@ elif st.session_state.page == "Cooler":
         cpu_cooler1, cpu_cooler2 = st.columns(2)
         with cpu_cooler1:
             st.subheader("Armaggedon CPU Cooler")
-            st.image("zaki/kumpulan gambar/8478a422-2f15-463f-b397-34333bea25c1.png", caption="Armaggeddon Air Cooler Blizzard 3 ARGB PC Cooler 6 Heat Pipes Direct Contact Technology")
+            st.image("zaki/kumpulan gambar/air cooler armaggedon.png", caption="Armaggeddon Air Cooler Blizzard 3 ARGB PC Cooler 6 Heat Pipes Direct Contact Technology")
             with st.popover("Press"):
                 st.markdown("**Rp. 270.000**")
                 st.markdown("- PRODUCT SIZE : 120 x 73 x 155mm\
@@ -585,7 +586,7 @@ elif st.session_state.page == "Cooler":
 
     with cpu_cooler2:
         st.subheader("PcCooler CPU Cooler")
-        st.image("zaki/kumpulan gambar/7074e233-8250-4266-b2bc-b275f164994d.jpg", caption="PCCOOLER Air Cooler / PC COOLER R200")
+        st.image("zaki/kumpulan gambar/air cooler pccooler.jpg", caption="PCCOOLER Air Cooler / PC COOLER R200")
         with st.popover("Press"):
             st.markdown("**Rp. 145.000**")
             st.markdown("- Max power dissipation, W\
@@ -609,7 +610,7 @@ elif st.session_state.page == "Cooler":
 
     with aio_cooler1:
           st.subheader("KYO Liquid Cooler")
-          st.image("zaki/kumpulan gambar/3cae662d-c3d7-425d-8186-e2e9f7501442.jpg", caption="KYO SAMA PI240B ARGB AIO Liquid Cooling 240mm AIO 240")
+          st.image("zaki/kumpulan gambar/liquid cooler kyo sama.jpg", caption="KYO SAMA PI240B ARGB AIO Liquid Cooling 240mm AIO 240")
           with st.popover("Press"):
                st.markdown("**Rp. 770.000**")
                st.markdown("Fan Spesification :\
@@ -636,7 +637,7 @@ elif st.session_state.page == "Cooler":
     
     with aio_cooler2:
         st.subheader("DeepCool Liquid Cooler")
-        st.image("zaki/kumpulan gambar/f6e2bff8-687d-4e68-91ed-3e9deeea039b.jpg", caption="DeepCool LE720 ARGB - 360mm AIO Liquid")
+        st.image("zaki/kumpulan gambar/liquid cooler deepcool.jpg", caption="DeepCool LE720 ARGB - 360mm AIO Liquid")
         with st.popover("Press"):
                 st.markdown("**Rp. 1.079.000**")
                 st.markdown(" - Net Weight 1570 g\
@@ -671,7 +672,7 @@ elif st.session_state.page == "Cooler":
     
      with pc_cooler1:
         st.subheader("KYO Fan Cooler")
-        st.image(resize_image("zaki/kumpulan gambar/0a6ba0f7-a0c5-4456-a2a1-919c8a44ab4d.png"), caption="KYO InfinitiX Fan ARGB 120mm ARGB Sync")
+        st.image(resize_image("zaki/kumpulan gambar/pc cooler kyo1.png"), caption="KYO InfinitiX Fan ARGB 120mm ARGB Sync")
         with st.popover("Press"):
              st.markdown("**Rp. 69.000**")
              st.markdown("Model =InfinitiX\
@@ -692,7 +693,7 @@ elif st.session_state.page == "Cooler":
 
      with pc_cooler2:
         st.subheader("KYO Fan Cooler")
-        st.image(resize_image("zaki/kumpulan gambar/cb39b23a-9204-4907-b6df-af1598adbc37.jpg"), caption="KYO InfinitiX PL120 Fan ARGB 120mm ARGB ")
+        st.image(resize_image("zaki/kumpulan gambar/pc cooler kyo2.jpg"), caption="KYO InfinitiX PL120 Fan ARGB 120mm ARGB ")
         with st.popover("Press"):
              st.markdown("**Rp. 125.000**")
              st.markdown(" - Model =InfinitiX PL120\
@@ -722,7 +723,7 @@ elif st.session_state.page == "Casing":
 
     with case1:
         st.subheader("Case sades")
-        st.image("zaki/kumpulan gambar/20190829131515_th.jpg", caption="Case Sades Seth")
+        st.image("zaki/kumpulan gambar/case sades.jpg", caption="Case Sades Seth")
         with st.popover("Press"):
             st.markdown("**Rp. 450.000**")
             st.markdown(" - M/B Form Factor:ATX,MICRO ATX,ITX\
@@ -741,7 +742,7 @@ elif st.session_state.page == "Casing":
 
     with case2:
         st.subheader("Case sades")
-        st.image("zaki/kumpulan gambar/20180419113802_th.jpg", caption="Case Sades Sphinx White")
+        st.image("zaki/kumpulan gambar/case sades2.jpg", caption="Case Sades Sphinx White")
         with st.popover("Press"):
             st.markdown("**Rp. 455.000**")
             st.markdown("- Color: White\
@@ -762,8 +763,8 @@ elif st.session_state.page == "Casing":
             st.button("Order now", key="case2")
 
     with case3:
-        st.subheader("Case Db")
-        st.image("zaki/kumpulan gambar/20151105161736.jpg", caption="Casing Digital Alliance 335B")
+        st.subheader("Case Da")
+        st.image("zaki/kumpulan gambar/case digial alliance.jpg", caption="Casing Digital Alliance 335B")
         with st.popover("Press"):
             st.markdown("**Rp. 395.000**")
             st.markdown("Motherboard Support	Micro ATX\

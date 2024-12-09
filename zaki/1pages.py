@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.logo("zaki/kumpulan gambar/Logo1.png",size="large")
+
 pages = {
     "🖥️-🦖": [
         st.Page("beranda.py", title="Beranda"),
