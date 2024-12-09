@@ -31,6 +31,8 @@ if st.sidebar.button("RAM 🙂", use_container_width=True):
     switch_page("RAM")
 if st.sidebar.button("PSU ⚡", use_container_width=True):
     switch_page("PSU")
+if st.sidebar.button("Cooler 🥶", use_container_width=True):
+    switch_page("Cooler")
 if st.sidebar.button("Casing 🤔", use_container_width=True):
     switch_page("Casing")
 
@@ -544,6 +546,171 @@ elif st.session_state.page == "PSU":
                         \n - PSU Form Factor ATX\
                         \n - Zero RPM Mode No")
             st.button("Order now", key="psu3")
+
+
+elif st.session_state.page == "Cooler":
+    st.title("Cooler")
+    st.write("""Cooler untuk PC adalah perangkat yang dirancang untuk menghilangkan panas yang dihasilkan oleh
+ komponen-komponen komputer, terutama prosesor (CPU) dan kartu grafis (GPU). Cooler sangat penting untuk menjaga
+  suhu komponen tetap dalam batas aman, sehingga mencegah overheating yang dapat menurunkan performa atau bahkan
+   merusak perangkat keras.""")
+
+
+    with st.expander("**Air cooler**"):
+        cpu_cooler1, cpu_cooler2 = st.columns(2)
+        with cpu_cooler1:
+            st.subheader("Armaggedon CPU Cooler")
+            st.image("zaki/kumpulan gambar/8478a422-2f15-463f-b397-34333bea25c1.png", caption="Armaggeddon Air Cooler Blizzard 3 ARGB PC Cooler 6 Heat Pipes Direct Contact Technology")
+            with st.popover("Press"):
+                st.markdown("**Rp. 270.000**")
+                st.markdown("- PRODUCT SIZE : 120 x 73 x 155mm\
+                        \n - FAN SIZE : 120 x 120 x 25mm\
+                        \n - FAN SPEED : 1200 RPM + 10%\
+                        \n - WEIGHT : 550G\
+                        \n - CONNECTOR : 3PIN W/O PWM\
+                        \n - STARTING VOLTAGE : 7 VDC\
+                        \n - AIR FLOW : 41.6 CFM\
+                        \n - RATED VOLTAGE : 12 VDC\
+                        \n - BEARING TYPE : Hydro Bearing\
+                        \n - POWER CONSUMPTION : 1.3W + 10%\
+                        \n - NOISE : 26 dBA\
+                        \n - LIFE : 20.000 Hours\
+                        \n - LIGHTING EFFECT : ARGB\
+                        \n - BUCKLE : Double Platform Buckle\
+                        \n - COPPER PIPE QUANTITY 6\
+                        \n - BLADE QUANTITY 9\
+                        \n - INTEL LGA : 115X/1200/1700\
+                        \n - AMD : AM4/AM5")
+                st.button("Order now", key="cooler1")
+
+    with cpu_cooler2:
+        st.subheader("PcCooler CPU Cooler")
+        st.image("zaki/kumpulan gambar/7074e233-8250-4266-b2bc-b275f164994d.jpg", caption="PCCOOLER Air Cooler / PC COOLER R200")
+        with st.popover("Press"):
+            st.markdown("**Rp. 145.000**")
+            st.markdown("- Max power dissipation, W\
+                        \n - TDP : 110W\
+                        \n - Number of heat pipes : 2\
+                        \n - Number of fans : 1\
+                        \n - Fan dimensions : 90 x 90 x 25 mm\
+                        \n - Rotational speed : 2200±10%RPM\
+                        \n - Noise level : 28.3dBA±10%\
+                        \n - Air flow : 39.6CFM\
+                        \n - Bearing type : Hydro Dynamic\
+                        \n - Connector type :3 -Pin\
+                        \n - Speed ​​controller (PWM) : Yes\
+                        \n - Height : 130 mm\
+                        \n - Backlight : No\
+                        \n - Dimensions (HxWxD) : 95*88*130 mm")
+            st.button("Order now", key="cooler2")
+
+    with st.expander("**AIO Cooler**"):
+        aio_cooler1, aio_cooler2 = st.columns(2)
+
+    with aio_cooler1:
+          st.subheader("KYO Liquid Cooler")
+          st.image("zaki/kumpulan gambar/3cae662d-c3d7-425d-8186-e2e9f7501442.jpg", caption="KYO SAMA PI240B ARGB AIO Liquid Cooling 240mm AIO 240")
+          with st.popover("Press"):
+               st.markdown("**Rp. 770.000**")
+               st.markdown("Fan Spesification :\
+                           \n - Fan Dimensions : 120*120*25m\
+                           \n - Material : PBT ,RoHS 2.0\
+                           \n - Bearing Type : Hydraulic bearing\
+                           \n - RPM : 800-1800RPM\
+                           \n - Air Flow : 58.2CFM\
+                           \n - Air Pressure : 0.92mm-H2O\
+                           \n - Fan Blade Quantity : 9pcs\
+                           \n - Cable Length : 500mm\
+                           \n - Connector/PWM : 4PIN PWM, 5V 3Pin AURA\
+                           \n - Lighting mode : ARGB inner 8PCS\
+                           \n - Quantity of fans : 2PCS\
+                           \n - Noise : ≤30dB-A\
+                           \n - Rated Voltage : DC 12V\
+                           \n - Working Voltage : DC 6-13.2V\
+                           \n - Start Voltage : ≥6V\
+                           \n - Rated Current : FAN:0.2A, LED 0.45A\
+                           \n - Fan Life : 30000Hrs\
+                           \n - Colour : Black\
+                           \n - TDP :250W")
+               st.button("Order now", key="cooler3")
+    
+    with aio_cooler2:
+        st.subheader("DeepCool Liquid Cooler")
+        st.image("zaki/kumpulan gambar/f6e2bff8-687d-4e68-91ed-3e9deeea039b.jpg", caption="DeepCool LE720 ARGB - 360mm AIO Liquid")
+        with st.popover("Press"):
+                st.markdown("**Rp. 1.079.000**")
+                st.markdown(" - Net Weight 1570 g\
+                            \n - Radiator Dimensions 402x120x27 mm(LxWxH)\
+                            \n - Radiator Material Aluminum\
+                            \n - Tube length 410 mm(LxWxH)\
+                            \n - Pump Dimensions 91x80x52 mm(LxWxH)\
+                            \n - Pump Speed 2550 RPM±10%\
+                            \n - Pump Noise 17.8 dB(A)\
+                            \n - Pump Connector 3-pin\
+                            \n - Pump Rated Voltage 12 VDC\
+                            \n - Pump Rated Current 0.21 A\
+                            \n - Pump Power Consumption 2.52 W\
+                            \n - Fan Dimensions 120x120x25 mm(LxWxH)\
+                            \n - Fan Speed 500~2250RPM±10%\
+                            \n - Fan Airflow 85.85 CFM\
+                            \n - Fan Air Pressure 3.27 mmAq\
+                            \n - Fan Noise ≤32.9 dB(A)\
+                            \n - Fan Connector 4-pin PWM\
+                            \n - Bearing Type Hydro Bearing\
+                            \n - Fan Rated Voltage 12 VDC\
+                            \n - Fan Rated Current 0.25 A\
+                            \n - Fan Power Consumption 3.0 W\
+                            \n - LED Type Addressable RGB LED\
+                            \n - LED Connector 3-pin(+5V-D-G)\
+                            \n - LED Rated Voltage 5 VDC\
+                            \n - LED Power Consumption 2.25 W(PUMP)/ 3.15 W(FANx3)")
+                st.button("Order now", key="cooler4")
+
+    with st.expander("Pc cooler"):
+     pc_cooler1, pc_cooler2 = st.columns(2)
+    
+     with pc_cooler1:
+        st.subheader("KYO Fan Cooler")
+        st.image(resize_image("zaki/kumpulan gambar/0a6ba0f7-a0c5-4456-a2a1-919c8a44ab4d.png"), caption="KYO InfinitiX Fan ARGB 120mm ARGB Sync")
+        with st.popover("Press"):
+             st.markdown("**Rp. 69.000**")
+             st.markdown("Model =InfinitiX\
+                         \n - Color =White\
+                         \n - Fan Dimensions =120x120x25mm\
+                         \n - Net Weight =132 g\
+                         \n - Fan Speed =1200RPM±10%\
+                         \n - Fan Airflow =50.3CFM\
+                         \n - Fan Noise =26.8dB\
+                         \n - Fan Rated Voltage =12V\
+                         \n - Fan Rated Current =0.28 A\
+                         \n - LED Type =ARGB\
+                         \n - Fan interface = 3pin, 3Pin ARGB\
+                         \n - Fan Life = 30000 Hours\
+                         \n - Working voltage = 12V DC\
+                         \n - 4-5Watt")
+             st.button("Order now", key="cooler5")
+
+     with pc_cooler2:
+        st.subheader("KYO Fan Cooler")
+        st.image(resize_image("zaki/kumpulan gambar/cb39b23a-9204-4907-b6df-af1598adbc37.jpg"), caption="KYO InfinitiX PL120 Fan ARGB 120mm ARGB ")
+        with st.popover("Press"):
+             st.markdown("**Rp. 125.000**")
+             st.markdown(" - Model =InfinitiX PL120\
+                         \n - Color =White\
+                         \n - Fan Dimensions =120x120x25.8mm\
+                         \n - Net Weight =155 g\
+                         \n - Fan Speed =800-1800RPM\
+                         \n - Fan Airflow =61.5CFM\
+                         \n - Fan Noise =6-30dB\
+                         \n - Fan Rated Voltage =12V\
+                         \n - Fan Rated Current =0.25 A\
+                         \n - LED Type =ARGB\
+                         \n - Fan interface = 4pin, 3Pin ARGB\
+                         \n - Fan Life = 30000 Hours\
+                         \n - Working voltage = 12V DC\
+                         \n - 4-5Watt")
+             st.button("Order now", key="cooler6")
+
 
 
 elif st.session_state.page == "Casing":
