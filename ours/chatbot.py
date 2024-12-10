@@ -1,5 +1,7 @@
 import json
 from difflib import get_close_matches
+import pandas as pd
+import os
 
 # Fungsi untuk memuat file JSON
 def load_knowledge_base(file_path: str) -> dict:
@@ -21,7 +23,11 @@ def save_knowledge_base(file_path: str, data: dict):
         json.dump(data, file, indent=2)
 
 def find_best_match(user_question: str, questions: list[str]) -> str | None:
-    matches: list = get_close_matches(user_question, questions, n=1, cutoff=0.6) #n=1: Mengambil hanya 1 string yang paling mirip dari daftar questions.
+    try:
+        matches: list = get_close_matches(user_question, questions, n=1, cutoff=0.6)
+        return matches[0] if matches else None
+    except Exception:
+        return None
 
     return matches[0] if matches else None
 
@@ -52,8 +58,27 @@ def chat_bot():
                 save_knowledge_base('knowledge_base.json', knowledge_base)
                 print('Bot: Thank you! I learned a new response!')
 
+def load_pc_recommendations(file_path: str) -> dict:
+    # Pastikan path file yang dimasukkan sesuai dengan lokasi
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+        return data
+    else:
+        raise FileNotFoundError(f"File {file_path} tidak ditemukan.")
+    
+# Fungsi untuk mendapatkan rekomendasi PC
+def get_pc_recommendation():
+    file_path = 'ours/pc_recommendations.json'  # pastikan path ini sesuai
+    try:
+        data = load_pc_recommendations(file_path)
+        return data  # Data berisi semua rekomendasi PC dari file JSON
+    except FileNotFoundError as e:
+        print(e)
+        return None
+
 def get_bot_response(user_input: str) -> str:
-    knowledge_base: dict = load_knowledge_base('knowledge_base.json')
+    knowledge_base: dict = load_knowledge_base('ours/knowledge_base.json')
     
     best_match: str | None = find_best_match(user_input, [q["question"] for q in knowledge_base["questions"]])
     
@@ -62,6 +87,9 @@ def get_bot_response(user_input: str) -> str:
         return answer
     else:
         return "Maaf, saya tidak mengerti pertanyaan Anda. Silakan coba pertanyaan lain."
+
+
+
 
 if __name__ == '__main__':
     chat_bot()

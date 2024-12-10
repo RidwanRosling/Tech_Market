@@ -1,6 +1,8 @@
 import streamlit as st
 import json
-
+import pandas as pd
+from chatbot import get_pc_recommendation
+from chatbot import get_bot_response
 st.title("Rekomendasi Produk Tech")
 
 # Baca data dari knowledge_base.json
@@ -22,15 +24,42 @@ user_question = st.text_input("Tanyakan sesuatu tentang produk tech:")
 # Tombol untuk mendapatkan respons
 if st.button("Tanya"):
     if user_question:
-        # Cari jawaban di knowledge base
-        response = "Maaf, saya tidak mengerti pertanyaan Anda."
-        for qa in knowledge_base["questions"]:
-            if qa["question"].lower() == user_question.lower():
-                response = qa["answer"]
-                break
+        # Dapatkan respons dari chatbot
+        response = get_bot_response(user_question)
         
         # Tambahkan ke riwayat chat
         st.session_state.chat_history.append({"user": user_question, "bot": response})
+
+# Tombol untuk mendapatkan rekomendasi PC
+if st.button("Rekomendasi PC"):
+    pc_recommendations = get_pc_recommendation()  # Mengambil data rekomendasi dari chatbot.py
+
+    if pc_recommendations:
+        # Memastikan data "recomend_me_a_pc" ada di dalam file JSON
+        pc_data = []
+        for pc, specs in pc_recommendations["recomend_me_a_pc"].items():
+            pc_info = {
+                "PC": pc,
+                "CPU": specs.get("CPU"),
+                "Fan Cooler": specs.get("Fan Cooler"),
+                "MOBO": specs.get("MOBO"),
+                "RAM": specs.get("RAM"),
+                "STORAGE": specs.get("STORAGE"),
+                "GPU": specs.get("GPU"),
+                "PSU": specs.get("PSU"),
+                "CASING": specs.get("CASING"),
+                "PRICE": specs.get("PRICE")
+            }
+            pc_data.append(pc_info)
+
+        # Konversi ke DataFrame Pandas
+        df = pd.DataFrame(pc_data)
+
+        # Menampilkan DataFrame di Streamlit
+        st.write(df)
+    else:
+        st.error("Tidak ada rekomendasi PC ditemukan.")
+
 
 # Tampilkan riwayat chat
 st.subheader("Riwayat Chat:")

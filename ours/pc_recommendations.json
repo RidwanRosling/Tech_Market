@@ -1,0 +1,15 @@
+{
+  "recomend_me_a_pc": {
+    "PC1": {
+      "CPU": "Ryzen 9 5900X",
+      "Fan Cooler": "Deepcool AG400 Plus",
+      "MOBO": "ASRock B550M Pro4",
+      "RAM": "Teamgroup DDR4 16GB",
+      "STORAGE": "Kyo Kaizen M.2 512GB",
+      "GPU": "Radeon RX 580 8G",
+      "PSU": "FSP HV PRO 550W",
+      "CASING": "Digital Alliance N30S V2 M-ATX",
+      "PRICE": "5.000.000"
+    }
+  }
+}

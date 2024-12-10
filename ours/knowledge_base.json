@@ -1,11 +1,11 @@
 {
   "questions": [
     {
-      "question": "Hello",
-      "answer": "Hi there!"
+      "question": "hello",
+      "answer": "hi there!"
     },
     {
-      "question": "How are you?",
+      "question": "who are you?",
       "answer": "I'm bot for help you to give an informations"
     },
     {
@@ -13,8 +13,8 @@
       "answer": "hi there"
     },
     {
-      "question": "recomend me a pc",
-      "answer": "PC1:\nCPU: Ryzen 9 5900X\nFan Cooler: Deepcool AG400 Plus\nMOBO: ASRock B550M Pro4\nRAM: Teamgroup DDR4 16GB\nSTORAGE: Kyo Kaizen M.2 512GB\nGPU: Radeon RX 580 8G\nPSU: FSP HV PRO 550W\nCASING: Digital Alliance N30S V2 M-ATX\n-----------------------------\nPRICE: 5.000.000"
+      "question": "abc",
+      "answer": "PC1: =CPU: Ryzen 9 5900XFan Cooler: Deepcool AG400 Plus MOBO: ASRock B550M Pro4 RAM: Teamgroup DDR4 16GB STORAGE: Kyo Kaizen M.2 512GB GPU: Radeon RX 580 8G PSU: FSP HV PRO 550W CASING: Digital Alliance N30S V2 M-ATX PRICE: 5.000.000"
     }
   ]
 }
