@@ -1,6 +1,7 @@
 {
   "recomend_me_a_pc": {
     "PC1": {
+      "PRICE": "5.000.000",
       "CPU": "Ryzen 9 5900X",
       "Fan Cooler": "Deepcool AG400 Plus",
       "MOBO": "ASRock B550M Pro4",
@@ -8,8 +9,18 @@
       "STORAGE": "Kyo Kaizen M.2 512GB",
       "GPU": "Radeon RX 580 8G",
       "PSU": "FSP HV PRO 550W",
-      "CASING": "Digital Alliance N30S V2 M-ATX",
-      "PRICE": "5.000.000"
+      "CASING": "Digital Alliance N30S V2 M-ATX"
+    },
+    "PC2": {
+      "PRICE": "12.000.000",
+      "CPU": "Intel i7 10700K",
+      "Fan Cooler": "Corsair H115i Pro",
+      "MOBO": "MSI Z490-A PRO",
+      "RAM": "Corsair Vengeance LPX 16GB",
+      "STORAGE": "Samsung 970 EVO Plus 1TB",
+      "GPU": "NVIDIA GeForce RTX 3070",
+      "PSU": "Corsair RM750x",
+      "CASING": "NZXT H510"
     }
   }
 }

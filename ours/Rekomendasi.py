@@ -40,6 +40,7 @@ if st.button("Rekomendasi PC"):
         for pc, specs in pc_recommendations["recomend_me_a_pc"].items():
             pc_info = {
                 "PC": pc,
+                "PRICE": specs.get("PRICE"),
                 "CPU": specs.get("CPU"),
                 "Fan Cooler": specs.get("Fan Cooler"),
                 "MOBO": specs.get("MOBO"),
@@ -47,13 +48,15 @@ if st.button("Rekomendasi PC"):
                 "STORAGE": specs.get("STORAGE"),
                 "GPU": specs.get("GPU"),
                 "PSU": specs.get("PSU"),
-                "CASING": specs.get("CASING"),
-                "PRICE": specs.get("PRICE")
+                "CASING": specs.get("CASING")
             }
             pc_data.append(pc_info)
 
         # Konversi ke DataFrame Pandas
         df = pd.DataFrame(pc_data)
+        #agar memulai dari index 1
+        df.index = pd.RangeIndex(start=1, stop=len(df) + 1, step=1)
+
 
         # Menampilkan DataFrame di Streamlit
         st.write(df)

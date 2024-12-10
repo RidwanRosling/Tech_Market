@@ -69,7 +69,7 @@ def load_pc_recommendations(file_path: str) -> dict:
     
 # Fungsi untuk mendapatkan rekomendasi PC
 def get_pc_recommendation():
-    file_path = 'ours/pc_recommendations.json'  # pastikan path ini sesuai
+    file_path = 'ours/pc_recommendations.json'
     try:
         data = load_pc_recommendations(file_path)
         return data  # Data berisi semua rekomendasi PC dari file JSON
