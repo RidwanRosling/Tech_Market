@@ -11,6 +11,10 @@
     {
       "question": "hi",
       "answer": "hi there"
+    },
+    {
+      "question": "recomend me a pc",
+      "answer": "PC1:\nCPU: Ryzen 9 5900X\nFan Cooler: Deepcool AG400 Plus\nMOBO: ASRock B550M Pro4\nRAM: Teamgroup DDR4 16GB\nSTORAGE: Kyo Kaizen M.2 512GB\nGPU: Radeon RX 580 8G\nPSU: FSP HV PRO 550W\nCASING: Digital Alliance N30S V2 M-ATX\n-----------------------------\nPRICE: 5.000.000"
     }
   ]
 }

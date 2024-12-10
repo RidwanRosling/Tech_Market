@@ -21,7 +21,8 @@ def save_knowledge_base(file_path: str, data: dict):
         json.dump(data, file, indent=2)
 
 def find_best_match(user_question: str, questions: list[str]) -> str | None:
-    matches: list = get_close_matches(user_question, questions, n=1, cutoff=0.6)
+    matches: list = get_close_matches(user_question, questions, n=1, cutoff=0.6) #n=1: Mengambil hanya 1 string yang paling mirip dari daftar questions.
+
     return matches[0] if matches else None
 
 def get_answer_for_question(question: str, knowledge_base: dict) -> str | None:

@@ -10,6 +10,7 @@ try:
 except FileNotFoundError:
     st.error("File knowledge_base.json tidak ditemukan!")
     knowledge_base = {"questions": []}
+    
 
 # Inisialisasi riwayat chat
 if 'chat_history' not in st.session_state:
