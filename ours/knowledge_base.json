@@ -1,11 +1,11 @@
 {
   "questions": [
     {
-      "question": "hello",
-      "answer": "hi there!"
+      "question": "Hello",
+      "answer": "Hi there!"
     },
     {
-      "question": "who are you?",
+      "question": "How are you?",
       "answer": "I'm bot for help you to give an informations"
     },
     {
@@ -13,8 +13,48 @@
       "answer": "hi there"
     },
     {
-      "question": "abc",
-      "answer": "PC1: =CPU: Ryzen 9 5900XFan Cooler: Deepcool AG400 Plus MOBO: ASRock B550M Pro4 RAM: Teamgroup DDR4 16GB STORAGE: Kyo Kaizen M.2 512GB GPU: Radeon RX 580 8G PSU: FSP HV PRO 550W CASING: Digital Alliance N30S V2 M-ATX PRICE: 5.000.000"
+      "question": "recomend me a pc",
+      "answer": "PC1:\nCPU: Ryzen 9 5900X\nFan Cooler: Deepcool AG400 Plus\nMOBO: ASRock B550M Pro4\nRAM: Teamgroup DDR4 16GB\nSTORAGE: Kyo Kaizen M.2 512GB\nGPU: Radeon RX 580 8G\nPSU: FSP HV PRO 550W\nCASING: Digital Alliance N30S V2 M-ATX\n-----------------------------\nPRICE: 5.000.000"
+    },
+    {
+      "question": "Cheapest price PC",
+      "answer": "2.600.000 | Intel Core i3-4170 | VenomRX DDR3 PC12800 8GB | V-Gen Rescue 960GB SATA3 | VenomRX Geforce GTX 750 Ti 4GB DDR5 | VenomRX Intel H81 M.2"
+    },
+    {
+      "question": "the most expensive PC",
+      "answer": "71.000.000 | intel core i9 14900KS | G.Skill Trident Z5 2X16 DDR5 | Samsung SSD 990 PRO 1TB | MSI RTX 4090 XTRIO 24GB | Asus Rog Maximus Z790 HERO"
+    },
+    {
+      "question": "best cpu",
+      "answer": "Ryzen 9 5900X"
+    },
+    {
+      "question": "best vga",
+      "answer": "VenomRX Radeon RX 580 8gb DDR5"
+    },
+    {
+      "question": "best ssd",
+      "answer": "samsung evo"
+    },
+    {
+      "question": "best mobo",
+      "answer": "MSI A520M-A Pro"
+    },
+    {
+      "question": "best ram",
+      "answer": "teamgroup"
+    },
+    {
+      "question": "best casing",
+      "answer": "aerocool bolt"
+    },
+    {
+      "question": "best psu",
+      "answer": "Gigabyte P550B 550W 80 + Bronze"
+    },
+    {
+      "question": "best pc",
+      "answer": "5.000.000 | Ryzen 9 5900X | ASRock B550M Pro4 | Teamgroup DDR4 16GB | Kyo Kaizen M.2 512GB | Radeon RX 580 8G | FSP HV PRO 550W | "
     }
   ]
 }
