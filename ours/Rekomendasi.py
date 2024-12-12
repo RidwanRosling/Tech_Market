@@ -35,6 +35,7 @@ if st.button("Rekomendasi PC"):
     pc_recommendations = get_pc_recommendation()  # Mengambil data rekomendasi dari chatbot.py
 
     if pc_recommendations:
+        st.write("🤖 Bot: here is the ready-made pc we recommend🫡")
         # Memastikan data "recomend_me_a_pc" ada di dalam file JSON
         pc_data = []
         for pc, specs in pc_recommendations["recomend_me_a_pc"].items():
