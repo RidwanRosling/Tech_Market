@@ -40,7 +40,7 @@ if st.sidebar.button("Casing 🤔", use_container_width=True):
 
 # Menampilkan konten berdasarkan halaman
 if st.session_state.page == "Home":
-    st.title("Hanying")
+    st.title("Selamat datang di Merapi")
     st.subheader("(Mending Rakit PC)")
     st.write("**Solusi Lengkap untuk Merakit dan Meng-upgrade PC Impian Anda, Tanpa Ribet.**")
     st.write("Salah satu alasan utama mengapa merakit PC adalah pilihan terbaik untuk jangka panjang adalah kemudahannya untuk di-upgrade sesuai kebutuhan di masa depan.")
