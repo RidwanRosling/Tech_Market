@@ -16,6 +16,14 @@ if "page" not in st.session_state:
 def switch_page(page_name):
     st.session_state.page = page_name
 
+# fungsi untuk mengambil data dari button yg di click
+# Fungsi untuk menulis data ke file
+def add_order(item_name, price):
+    file_path = "order_now.py"  # File akan berada di direktori yang sama
+    with open(file_path, "a") as file:
+        st.write(f"{item_name},{price}\n")
+    st.success(f"{item_name} berhasil ditambahkan ke pesanan!")
+
 # Sidebar atau navigasi
 st.sidebar.title("Menu")
 if st.sidebar.button("Home", use_container_width=True):
@@ -76,7 +84,12 @@ elif st.session_state.page == "Motherboard":
             st.markdown("**Rp. 1.548.000**")
             st.markdown("Spesifikasi:")
             st.markdown((" ".join(sp_satu)))
-            st.button("Order now", key="mobo_1")
+            if st.button("Order now", key="mobo_1"):
+                item_name = "ASROCK B550M PRO4 AMD"
+                price = "Rp. 1.548.000"
+                st.write("ASROCK B550M PRO4 AMD\
+                    \n Telah ditambahkan ke order now!")
+
 
 
     with col5:
