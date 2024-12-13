@@ -118,25 +118,28 @@ def choose_component(component_name, options):
     else:
         return None, 0
 
-def matching(cpu_choice, mobo_choice, ram_choise):
+def matching(cpu_choice, mobo_choice, ram_choice):
     """
-    memeriksa kecocokan CPU dan Motherboard berdasarkan socket
+    memeriksa kecocokan komponen
     """
+    # Matching cpu dan mobo
     if "LGA 1700" in cpu_choice and "LGA 1700" in mobo_choice:
         return True
     if "LGA 1151" in cpu_choice and "LGA 1151" in mobo_choice:
         return True
-    if "LGA 1150" in cpu_choice and "LAG 1150" in mobo_choice:
+    if "LGA 1150" in cpu_choice and "LGA 1150" in mobo_choice:
         return True
     if "LGA 1200" in cpu_choice and "LGA 1200" in mobo_choice:
         return True
     if "AM4" in cpu_choice and "AM4" in mobo_choice:
         return True
-    if "DDR5" in mobo_choice and "DDR5" in ram_choise:
+    
+    # Matching mobo dan ram
+    if "DDR5" in mobo_choice and "DDR5" in ram_choice:
         return True
-    if "DDR4" in mobo_choice and "DDR4" in ram_choise:
+    if "DDR4" in mobo_choice and "DDR4" in ram_choice:
         return True
-    if "DDR3" in mobo_choice and "DDR3" in ram_choise:
+    if "DDR3" in mobo_choice and "DDR3" in ram_choice:
         return True
     return False
 
@@ -146,10 +149,12 @@ def main():
     selected_components = []
 
     # Pemilihan komponen
+    # CPU
     cpu_name, cpu_price = choose_component("Processor", components["CPU"])
     if cpu_name:
         selected_components.append(("Processor", cpu_name, cpu_price))
 
+    # MOBO
     mobo_name, mobo_price = choose_component("Motherboard", components["Motherboard"])
     if mobo_name:
         selected_components.append(("Motherboard", mobo_name, mobo_price))
@@ -158,29 +163,35 @@ def main():
         st.warning("Socket CPU dan Motherboard tidak cocok!")
         return
 
+    # FAN COOLER
     fan_cooler_name, fan_cooler_price = choose_component("Fan Cooler", components["Fan Cooler"])
     if fan_cooler_name:
         selected_components.append(("Fan Cooler", fan_cooler_name, fan_cooler_price))
 
+    # RAM
     ram_name, ram_price = choose_component("RAM", components["RAM"])
     if ram_name:
         selected_components.append(("RAM", ram_name, ram_price))
 
-    if mobo_name and ram_name and not matching(mobo_name, "",ram_name):
+    if mobo_name and ram_name and not matching("", mobo_name, ram_name):
         st.warning("Socket RAM dan Motherboard tidak cocok!")
 
+    # VGA
     vga_name, vga_price = choose_component("Graphic Card", components["Graphic Card"])
     if vga_name:
         selected_components.append(("Graphic Card", vga_name, vga_price))
 
+    # STORAGE
     storage_name, storage_price = choose_component("Storage", components["Storage"])
     if storage_name:
         selected_components.append(("Storage", storage_name, storage_price))
 
+    # PSU
     psu_name, psu_price = choose_component("Power Supply", components["Power Supply"])
     if psu_name:
         selected_components.append(("Power Supply", psu_name, psu_price))
 
+    # CASING
     casing_name, casing_price = choose_component("Casing", components["Casing"])
     if casing_name:
         selected_components.append(("Casing", casing_name, casing_price))
