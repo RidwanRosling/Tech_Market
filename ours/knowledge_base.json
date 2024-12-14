@@ -55,6 +55,10 @@
     {
       "question": "best pc",
       "answer": "5.000.000 | Ryzen 9 5900X | ASRock B550M Pro4 | Teamgroup DDR4 16GB | Kyo Kaizen M.2 512GB | Radeon RX 580 8G | FSP HV PRO 550W | "
+    },
+    {
+      "question": "help",
+      "answer": "hello | how are you? | hi | recomend me a pc | Cheapest price PC | the most expensive pc | best cpu | best vga | best ssd | best mobo | best ram | best casing | best psu | best pc"
     }
   ]
 }
