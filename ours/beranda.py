@@ -146,7 +146,11 @@ elif st.session_state.page == "CPU":
         with st.popover("Press"):
             st.markdown("**Rp. 5.730.000**")
             st.markdown((" ".join(sp_empat)))
-            st.button("Order now", key="cpu1")
+            if st.button("Order now", key="cpu1") :
+                item_name = "AMD Ryzen 9 5900X"
+                price = "Rp.5.730.000"
+                st.write("AMD Ryzen 9 5900X\
+                    \n Telah ditambahkan ke order now!")
 
 
     with cpu2:
@@ -155,7 +159,11 @@ elif st.session_state.page == "CPU":
         with st.popover("Press"):
             st.markdown("**Rp.840.000**")
             st.markdown((" ".join(sp_lima)))
-            st.button("Order now", key="cpu2")
+            if st.button("Order now", key="cpu2") :
+                item_name = "Intel pentium G5420"
+                price = "Rp.840.000"
+                st.write("Intel pentium G5420\
+                    \n Telah ditambahkan ke order now!")
 
 
     with cpu3:
@@ -164,7 +172,11 @@ elif st.session_state.page == "CPU":
         with st.popover("Press"):
             st.markdown("**Rp.2.020.000**")
             st.markdown((" ".join(sp_enam)))
-            st.button("Order now", key="cpu3")
+            if st.button("Order now", key="cpu3") :
+                item_name = "Ryzen 5 3600"
+                price = "Rp.2.020.000"
+                st.write("Ryzen 5 3600\
+                    \n Telah ditambahkan ke order now!")
 
 
     with cpu4:
@@ -173,7 +185,11 @@ elif st.session_state.page == "CPU":
         with st.popover("Press"):
             st.markdown("**Rp.1.635.000**")
             st.markdown((" ".join(sp_tujuh)))
-            st.button("Order now", key="cpu4")
+            if st.button("Order now", key="cpu4") :
+                item_name = "Intel I5 10400F"
+                price = "Rp.1.635.000"
+                st.write("Intel I5 10400F\
+                    \n Telah ditambahkan ke order now!")
 
 
 elif st.session_state.page == "GPU":
@@ -188,7 +204,11 @@ elif st.session_state.page == "GPU":
         with st.popover("Press"):
             st.markdown("**Rp. 1.650.000**")
             st.markdown((" ".join(sp_delapan)))
-            st.button("Order now", key="gpu1")
+            if st.button("Order now", key="gpu1") :
+                item_name = "Radeon RX 580 8G"
+                price = "Rp. 1.650.000"
+                st.write("Radeon RX 580 8G\
+                    \n Telah ditambahkan ke order now!")
 
     with gpu2:
         st.subheader("Nvidia G series")
@@ -196,7 +216,11 @@ elif st.session_state.page == "GPU":
         with st.popover("Press"):
             st.markdown("**Rp. 1.679.000**")
             st.markdown((" ".join(sp_sembilan)))
-            st.button("Order now", key="gpu2")
+            if st.button("Order now", key="gpu2") :
+                item_name = "GTX 1660 Gaming X 6G"
+                price = "Rp. 1.679.000"
+                st.write("GTX 1660 Gaming X 6G\
+                    \n Telah ditambahkan ke order now!")
 
 
     with gpu3:
@@ -205,7 +229,11 @@ elif st.session_state.page == "GPU":
         with st.popover("Press"):
             st.markdown("**Rp. 3.499.000**")
             st.markdown((" ".join(sp_sepuluh)))
-            st.button("Order now", key="gpu3")
+            if st.button("Order now", key="gpu3") :
+                item_name = "Intel ARC 750"
+                price = "Rp. 3.499.000"
+                st.write("Intel ARC 750\
+                    \n Telah ditambahkan ke order now!")
 
 
     with gpu4:
@@ -214,7 +242,11 @@ elif st.session_state.page == "GPU":
         with st.popover("Press"):
             st.markdown("**Rp. 3.821.000**")
             st.markdown((" ".join(sp_sebelas)))
-            st.button("Order now", key="gpu4")
+            if st.button("Order now", key="gpu4") :
+                item_name = "Amd radeon RX 6700xt"
+                price = "Rp. 3.821.000"
+                st.write("Amd radeon RX 6700xt\
+                    \n Telah ditambahkan ke order now!")
 
 
 elif st.session_state.page == "SSD":
@@ -229,7 +261,11 @@ elif st.session_state.page == "SSD":
         with st.popover("Press"):
             st.markdown("**Rp.821.000**")
             st.markdown(" ".join(sp_duabelas))
-            st.button("Order now", key="ssd1")
+            if st.button("Order now", key="ssd1") :
+                item_name = "Samsung SSD 870 EVO 500GB Sata 3"
+                price = "Rp.821.000"
+                st.write("Samsung SSD 870 EVO 500GB Sata 3\
+                    \n Telah ditambahkan ke order now!")
 
     with ssd2:
         st.subheader("SSD NVMe")
@@ -237,7 +273,11 @@ elif st.session_state.page == "SSD":
         with st.popover("Press"):
             st.markdown("**Rp.690.000**")
             st.markdown("Size : 500GB, Read/write: 4700/1900Mb/s, TBW 110")
-            st.button("Order now", key="ssd2")
+            if st.button("Order now", key="ssd2") :
+                item_name = "Crucial SSD P3 Plus PCIe Gen4 M.2 NVMe"
+                price = "Rp.690.000"
+                st.write("Crucial SSD P3 Plus PCIe Gen4 M.2 NVMe\
+                    \n Telah ditambahkan ke order now!")
 
     with ssd3:
         st.subheader("SSD SATA")
@@ -245,7 +285,11 @@ elif st.session_state.page == "SSD":
         with st.popover("Press"):
             st.markdown("**Rp.145.000**")
             st.markdown(" ".join(sp_tigabelas))
-            st.button("Order now", key="ssd3")
+            if st.button("Order now", key="ssd3") :
+                item_name = "SSD KYO KAIZEN 128GB SATA III 2.5 6GB/S SSD SATA 3"
+                price = "Rp.145.000"
+                st.write("SSD KYO KAIZEN 128GB SATA III 2.5 6GB/S SSD SATA 3\
+                    \n Telah ditambahkan ke order now!")
 
     with ssd4:
         st.subheader("SSD NVMe")
@@ -253,7 +297,11 @@ elif st.session_state.page == "SSD":
         with st.popover("Press"):
             st.markdown("**Rp.919.000**")
             st.markdown(" ".join(sp_empatbelas))
-            st.button("Order now", key="ssd4")
+            if st.button("Order now", key="ssd4") :
+                item_name = "ACER FA100 M.2 NVMe PCIe Gen3 x4 SSD - 1TB"
+                price = "Rp.919.000"
+                st.write("ACER FA100 M.2 NVMe PCIe Gen3 x4 SSD - 1TB\
+                    \n Telah ditambahkan ke order now!")
 
 
 elif st.session_state.page == "RAM":
@@ -268,7 +316,11 @@ elif st.session_state.page == "RAM":
         with st.popover("Press"):
             st.markdown("**Rp.375.000**")
             st.markdown(" ".join(sp_limabelas))
-            st.button("Order now", key="ram1")
+            if st.button("Order now", key="ram1") :
+                item_name = "RAM Kingston Fury Beast RGB DDR4 3200MHz (PC25600) 8GB (1x8GB)"
+                price = "Rp.375.000"
+                st.write("RAM Kingston Fury Beast RGB DDR4 3200MHz (PC25600) 8GB (1x8GB)\
+                    \n Telah ditambahkan ke order now!")
 
     with ram2:
         st.subheader("Ram DDR3")
@@ -276,7 +328,11 @@ elif st.session_state.page == "RAM":
         with st.popover("Press"):
             st.markdown("**Rp.92.000**")
             st.markdown(" ".join(sp_enambelas))
-            st.button("Order now", key="ram2")
+            if st.button("Order now", key="ram2") :
+                item_name = "RAM EnPC LONGDIMM DDR3 8GB 1600Mhz"
+                price = "Rp.92.000"
+                st.write("RAM EnPC LONGDIMM DDR3 8GB 1600Mhz\
+                    \n Telah ditambahkan ke order now!")
 
     with ram3:
         st.subheader("Ram DDR4")
@@ -284,7 +340,11 @@ elif st.session_state.page == "RAM":
         with st.popover("Press"):
             st.markdown("**Rp. 495.000**")
             st.markdown(" ".join(sp_tujuhbelas))
-            st.button("Order now", key="ram3")
+            if st.button("Order now", key="ram3") :
+                item_name = "Team Ram T-Create Expert 16GB Kit (8GBX2) DDR 4 PC3600"
+                price = "Rp. 495.000"
+                st.write("Team Ram T-Create Expert 16GB Kit (8GBX2) DDR 4 PC3600\
+                    \n Telah ditambahkan ke order now!")
     
     with ram4:
         st.subheader("Ram DDR5")
@@ -292,7 +352,11 @@ elif st.session_state.page == "RAM":
         with st.popover("Press"):
             st.markdown("**Rp.1.899.000**")
             st.markdown(" ".join(sp_delapanbelas))
-            st.button("Order now", key="ram4")
+            if st.button("Order now", key="ram4") :
+                item_name = "PREDATOR VESTA II DDR5 6000 MHz RGB U-DIMM [Desktop RAM] - 32GB KIT"
+                price = "Rp.1.899.000"
+                st.write("PREDATOR VESTA II DDR5 6000 MHz RGB U-DIMM [Desktop RAM] - 32GB KIT\
+                    \n Telah ditambahkan ke order now!")
 
 
 elif st.session_state.page == "PSU":
@@ -307,7 +371,11 @@ elif st.session_state.page == "PSU":
         with st.popover("Press"):
             st.markdown("**Rp. 770.000**")
             st.markdown(" ".join(sp_19))
-            st.button("Order now", key="psu1")
+            if st.button("Order now", key="psu1") :
+                item_name = "Cooler Master MWE 550 V2 - 550W"
+                price = "Rp. 770.000"
+                st.write("Cooler Master MWE 550 V2 - 550W\
+                    \n Telah ditambahkan ke order now!")
 
     
     with psu2:
@@ -316,7 +384,11 @@ elif st.session_state.page == "PSU":
         with st.popover("Press"):
             st.markdown("**RP. 649.000**")
             st.markdown(" ".join(sp_20))
-            st.button("Order now", key="psu2")
+            if st.button("Order now", key="psu2") :
+                item_name = "Aerocool LUX 650W 80+ Bronze ATX PSU"
+                price = "Rp. 649.000"
+                st.write("Aerocool LUX 650W 80+ Bronze ATX PSU\
+                    \n Telah ditambahkan ke order now!")
 
 
     with psu3:
@@ -325,7 +397,11 @@ elif st.session_state.page == "PSU":
         with st.popover("Press"):
             st.markdown("**Rp. 939.000**")
             st.markdown(" ".join(sp_21))
-            st.button("Order now", key="psu3")
+            if st.button("Order now", key="psu3") :
+                item_name = "CV Series CV750 750 Watt 80 Plus Bronze"
+                price = "Rp. 939.000"
+                st.write("CV Series CV750 750 Watt 80 Plus Bronze\
+                    \n Telah ditambahkan ke order now!")
 
 
 elif st.session_state.page == "Cooler":
@@ -341,7 +417,11 @@ elif st.session_state.page == "Cooler":
             with st.popover("Press"):
                 st.markdown("**Rp. 270.000**")
                 st.markdown(" ".join(sp_22))
-                st.button("Order now", key="cooler1")
+                if st.button("Order now", key="cooler1") :
+                    item_name = "Armaggeddon Air Cooler Blizzard 3 ARGB PC Cooler 6 Heat Pipes Direct Contact Technology"
+                    price = "Rp. 270.000"
+                    st.write("Armaggeddon Air Cooler Blizzard 3 ARGB PC Cooler 6 Heat Pipes Direct Contact Technology\
+                        \n Telah ditambahkan ke order now!")
 
     with cpu_cooler2:
         st.subheader("PcCooler CPU Cooler")
@@ -349,7 +429,11 @@ elif st.session_state.page == "Cooler":
         with st.popover("Press"):
             st.markdown("**Rp. 145.000**")
             st.markdown(" ".join(sp_23))
-            st.button("Order now", key="cooler2")
+            if st.button("Order now", key="cooler2") :
+                item_name = "PCCOOLER Air Cooler / PC COOLER R200"
+                price = "Rp. 145.000"
+                st.write("PCCOOLER Air Cooler / PC COOLER R200\
+                    \n Telah ditambahkan ke order now!")
 
     with st.expander("**AIO Cooler**"):
         aio_cooler1, aio_cooler2 = st.columns(2)
@@ -360,7 +444,11 @@ elif st.session_state.page == "Cooler":
           with st.popover("Press"):
                st.markdown("**Rp. 770.000**")
                st.markdown(" ".join(sp_24))
-               st.button("Order now", key="cooler3")
+               if st.button("Order now", key="cooler3") :
+                   item_name = "KYO SAMA PI240B ARGB AIO Liquid Cooling 240mm AIO 240"
+                   price = "Rp. 770.000"
+                   st.write("KYO SAMA PI240B ARGB AIO Liquid Cooling 240mm AIO 240\
+                        \n Telah ditambahkan ke order now!")
     
     with aio_cooler2:
         st.subheader("DeepCool Liquid Cooler")
@@ -368,7 +456,11 @@ elif st.session_state.page == "Cooler":
         with st.popover("Press"):
                 st.markdown("**Rp. 1.079.000**")
                 st.markdown(" ".join(sp_25))
-                st.button("Order now", key="cooler4")
+                if st.button("Order now", key="cooler4") :
+                    item_name = "DeepCool LE720 ARGB - 360mm AIO Liquid"
+                    price = "Rp. 1.079.000"
+                    st.write("DeepCool LE720 ARGB - 360mm AIO Liquid\
+                        \n Telah ditambahkan ke order now!")
 
     with st.expander("Pc cooler"):
      pc_cooler1, pc_cooler2 = st.columns(2)
@@ -379,15 +471,23 @@ elif st.session_state.page == "Cooler":
         with st.popover("Press"):
              st.markdown("**Rp. 69.000**")
              st.markdown(" ".join(sp_26))
-             st.button("Order now", key="cooler5")
+             if st.button("Order now", key="cooler5") :
+                 item_name = "KYO InfinitiX Fan ARGB 120mm ARGB Sync"
+                 price = "Rp. 69.000"
+                 st.write("KYO InfinitiX Fan ARGB 120mm ARGB Sync\
+                    \n Telah ditambahkan ke order now!")
 
      with pc_cooler2:
         st.subheader("KYO Fan Cooler")
-        st.image(resize_image("ours/kumpulan gambar/pc cooler kyo2.jpg"), caption="KYO InfinitiX PL120 Fan ARGB 120mm ARGB ")
+        st.image(resize_image("ours/kumpulan gambar/pc cooler kyo2.jpg"), caption="KYO InfinitiX PL120 Fan ARGB 120mm ARGB")
         with st.popover("Press"):
              st.markdown("**Rp. 125.000**")
              st.markdown(" ".join(sp_27))
-             st.button("Order now", key="cooler6")
+             if st.button("Order now", key="cooler6") :
+                 item_name = "KYO InfinitiX PL120 Fan ARGB 120mm ARGB"
+                 price = "Rp. 125.000"
+                 st.write("KYO InfinitiX PL120 Fan ARGB 120mm ARGB\
+                    \n Telah ditambahkan ke order now!")
 
 
 
@@ -404,7 +504,11 @@ elif st.session_state.page == "Casing":
         with st.popover("Press"):
             st.markdown("**Rp. 450.000**")
             st.markdown(" ".join(sp_28))
-            st.button("Order now", key="case1")
+            if st.button("Order now", key="case1") :
+                item_name = "Case Sades Seth"
+                price = "Rp. 450.000"
+                st.write("Case Sades Seth\
+                    \n Telah ditambahkan ke order now!")
 
     with case2:
         st.subheader("Case sades")
@@ -412,7 +516,11 @@ elif st.session_state.page == "Casing":
         with st.popover("Press"):
             st.markdown("**Rp. 455.000**")
             st.markdown(" ".join(sp_29))
-            st.button("Order now", key="case2")
+            if st.button("Order now", key="case2") :
+                item_name = "Case Sades Sphinx White"
+                price = "Rp. 455.000"
+                st.write("Case Sades Sphinx White\
+                    \n Telah ditambahkan ke order now!")
 
     with case3:
         st.subheader("Case Da")
@@ -420,4 +528,8 @@ elif st.session_state.page == "Casing":
         with st.popover("Press"):
             st.markdown("**Rp. 395.000**")
             st.markdown(" ".join(sp_30))
-            st.button("Order now", key="case3")
+            if st.button("Order now", key="case3") :
+                item_name = "Casing Digital Alliance 335B"
+                price = "Rp. 395.000"
+                st.write("Casing Digital Alliance 335B\
+                    \n Telah ditambahkan ke order now!")
