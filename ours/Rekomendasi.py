@@ -10,7 +10,7 @@ try:
     with open('ours/knowledge_base.json', 'r') as file:
         knowledge_base = json.load(file)
 except FileNotFoundError:
-    st.error("File knowledge_base.json tidak ditemukan!")
+    st.error("The file knowledge_base.json was not found!")
     knowledge_base = {"questions": []}
     
 
@@ -33,7 +33,7 @@ if st.button("ASK"):
         st.session_state.chat_history.append({"user": user_question, "bot": response})
 
 # Tombol untuk mendapatkan rekomendasi PC
-if st.button("Rekomendasi PC"):
+if st.button("RECOMEND"):
     pc_recommendations = get_pc_recommendation()  # Mengambil data rekomendasi dari chatbot.py
 
     if pc_recommendations:
@@ -64,17 +64,18 @@ if st.button("Rekomendasi PC"):
         # Menampilkan DataFrame di Streamlit
         st.write(df)
     else:
-        st.error("Tidak ada rekomendasi PC ditemukan.")
+        st.error("No PC recommendations found.")
 
 
 # Tampilkan riwayat chat
-st.subheader("Riwayat Chat:")
+st.subheader("Chat History:")
 for chat in st.session_state.chat_history:
-    st.write(f"👤 Anda: {chat['user']}")
-    st.write(f"🤖 Bot: {chat['bot']}")
-    st.write("---")
+    with st.chat_message("user"):
+        st.write(f"Anda: {chat['user']}")
 
+    with st.chat_message("assistant"):
+        st.write(f"Bot: {chat['bot']}")
 # Tombol untuk menghapus riwayat
-if st.button("Hapus Riwayat Chat"):
+if st.button("Delete Chat History"):
     st.session_state.chat_history = []
     st.rerun()  # Menggunakan st.rerun() sebagai pengganti st.experimental_rerun()
