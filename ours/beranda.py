@@ -20,7 +20,7 @@ def switch_page(page_name):
 # Fungsi untuk menulis data ke file
 def add_order(item_name, price):
     file_path = "order_now.py"  # File akan berada di direktori yang sama
-    with open(file_path, "a") as file:
+    with open(file_path, "w") as file:
         st.write(f"{item_name},{price}\n")
     st.success(f"{item_name} berhasil ditambahkan ke pesanan!")
 
@@ -94,12 +94,17 @@ elif st.session_state.page == "Motherboard":
 
     with col5:
         st.subheader("Srock")
-        st.image("ours/kumpulan gambar/mobo b560m-hdv.jpg", caption="SROCK MOTHERBOARD B560M HDV M.2 R2.0 (INTEL)")
+        st.image("ours/kumpulan gambar/mobo b560m-hdv.jpg", caption="ASROCK MOTHERBOARD B560M HDV M.2 R2.0 (INTEL)")
         with st.popover("Press"):
             st.markdown("**Rp. 1.250.000**")
             st.markdown("Spesifikasi:")
             st.markdown((" ".join(sp_dua)))
-            st.button("Order now", key= "mobo_2")
+            if st.button("Order now", key= "mobo_2") :
+                item_name = "ASROCK MOTHERBOARD B560M HDV M.2 R2.0 (INTEL)"
+                price = "Rp. 1.250.000"
+                st.write("ASROCK MOTHERBOARD B560M HDV M.2 R2.0 (INTEL)\
+                    \n Telah ditambahkan ke order now!")
+
 
 
     with col6:
@@ -109,8 +114,11 @@ elif st.session_state.page == "Motherboard":
             st.markdown("**Rp. 989.000**")
             st.markdown("Spesifikasi:")
             st.markdown((" ".join(sp_tiga)))
-            st.button("Order now", key="mobo_3")
-
+            if st.button("Order now", key="mobo_3") :
+                item_name = "ASROCK MOTHERBOARD A520M-HVS (AMD)"
+                price = "Rp. 989.000"
+                st.write("ASROCK MOTHERBOARD A520M-HVS (AMD) \
+                    \n Telah ditambahkan ke order now!")
 
     with col7:
         st.subheader("Asus")
@@ -119,7 +127,11 @@ elif st.session_state.page == "Motherboard":
             st.markdown("**Rp.3.300.000**")
             st.markdown("Spesifikasi:")
             st.markdown((" ".join(sp_empat)))
-            st.button("Order now", key="mobo_4")
+            if st.button("Order now", key="mobo_4") :
+                item_name = "ASUS Motherbord ROG STRIX B460-F GAMING"
+                price = "Rp.3.300.000"
+                st.write("ASUS Motherbord ROG STRIX B460-F GAMING\
+                    \n Telah ditambahkan ke order now!")
 
 
 elif st.session_state.page == "CPU":

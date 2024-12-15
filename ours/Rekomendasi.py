@@ -3,7 +3,7 @@ import json
 import pandas as pd
 from chatbot import get_pc_recommendation
 from chatbot import get_bot_response
-st.title("Rekomendasi Produk Tech")
+st.title("Recomendation Product Merapi")
 
 # Baca data dari knowledge_base.json
 try:
@@ -18,11 +18,13 @@ except FileNotFoundError:
 if 'chat_history' not in st.session_state:
     st.session_state.chat_history = []
 
+st.caption("type 'help' to see what bot can do!")
+
 # Input dari user
-user_question = st.text_input("Tanyakan sesuatu tentang produk tech:")
+user_question = st.text_input("Asking Something About our Products:")
 
 # Tombol untuk mendapatkan respons
-if st.button("Tanya"):
+if st.button("ASK"):
     if user_question:
         # Dapatkan respons dari chatbot
         response = get_bot_response(user_question)
