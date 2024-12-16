@@ -35,16 +35,11 @@ def load_pc_recommendations(file_path: str) -> dict:
 # Fungsi untuk mendapatkan rekomendasi PC
 def get_pc_recommendation():
     file_path = 'ours/pc_recommendations.json'
-    try:
-        data = load_pc_recommendations(file_path)
-        return data  # Data berisi semua rekomendasi PC dari file JSON
-    except FileNotFoundError as e:
-        print(e)
-        return None
+    data = load_pc_recommendations(file_path)
+    return data  # Data berisi semua rekomendasi PC dari file JSON
 
 def get_bot_response(user_input: str) -> str:
     knowledge_base: dict = load_knowledge_base('ours/knowledge_base.json')
-    
     best_match: str | None = find_best_match(user_input, [q["question"] for q in knowledge_base["questions"]])
     
     if best_match:

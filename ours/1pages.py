@@ -7,7 +7,7 @@ pages = {
         st.Page("beranda.py", title="Beranda"),
         st.Page("Rekomendasi.py", title="Rekomendasi"),
         st.Page("simulasi.py", title="Simulasi"),
-        st.Page("order_now.py", title="CheckOut"),
+        st.Page("order_now.py", title="order_now"),
         st.Page("tentang_toko.py", title="about us")
     ]
 }

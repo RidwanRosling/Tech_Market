@@ -17,12 +17,12 @@ def switch_page(page_name):
     st.session_state.page = page_name
 
 # fungsi untuk mengambil data dari button yg di click
-# Fungsi untuk menulis data ke file
+if "orders" not in st.session_state:
+    st.session_state.orders = []
+
 def add_order(item_name, price):
-    file_path = "order_now.py"  # File akan berada di direktori yang sama
-    with open(file_path, "w") as file:
-        st.write(f"{item_name},{price}\n")
-    st.success(f"{item_name} berhasil ditambahkan ke pesanan!")
+    st.success(f"{item_name}\
+        \nberhasil ditambahkan ke pesanan!")
 
 # Sidebar atau navigasi
 st.sidebar.title("Menu")
@@ -87,8 +87,8 @@ elif st.session_state.page == "Motherboard":
             if st.button("Order now", key="mobo_1"):
                 item_name = "ASROCK B550M PRO4 AMD"
                 price = "Rp. 1.548.000"
-                st.write("ASROCK B550M PRO4 AMD\
-                    \n Telah ditambahkan ke order now!")
+                st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name,price)
 
 
 
@@ -102,8 +102,9 @@ elif st.session_state.page == "Motherboard":
             if st.button("Order now", key= "mobo_2") :
                 item_name = "ASROCK MOTHERBOARD B560M HDV M.2 R2.0 (INTEL)"
                 price = "Rp. 1.250.000"
-                st.write("ASROCK MOTHERBOARD B560M HDV M.2 R2.0 (INTEL)\
-                    \n Telah ditambahkan ke order now!")
+                st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name, price)
+
 
 
 
@@ -117,8 +118,9 @@ elif st.session_state.page == "Motherboard":
             if st.button("Order now", key="mobo_3") :
                 item_name = "ASROCK MOTHERBOARD A520M-HVS (AMD)"
                 price = "Rp. 989.000"
-                st.write("ASROCK MOTHERBOARD A520M-HVS (AMD) \
-                    \n Telah ditambahkan ke order now!")
+                st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name, price)
+
 
     with col7:
         st.subheader("Asus")
@@ -130,8 +132,9 @@ elif st.session_state.page == "Motherboard":
             if st.button("Order now", key="mobo_4") :
                 item_name = "ASUS Motherbord ROG STRIX B460-F GAMING"
                 price = "Rp.3.300.000"
-                st.write("ASUS Motherbord ROG STRIX B460-F GAMING\
-                    \n Telah ditambahkan ke order now!")
+                st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name,price)
+
 
 
 elif st.session_state.page == "CPU":
@@ -149,8 +152,9 @@ elif st.session_state.page == "CPU":
             if st.button("Order now", key="cpu1") :
                 item_name = "AMD Ryzen 9 5900X"
                 price = "Rp.5.730.000"
-                st.write("AMD Ryzen 9 5900X\
-                    \n Telah ditambahkan ke order now!")
+                st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name, price)
+
 
 
     with cpu2:
@@ -162,8 +166,9 @@ elif st.session_state.page == "CPU":
             if st.button("Order now", key="cpu2") :
                 item_name = "Intel pentium G5420"
                 price = "Rp.840.000"
-                st.write("Intel pentium G5420\
-                    \n Telah ditambahkan ke order now!")
+                st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name,price)
+
 
 
     with cpu3:
@@ -175,8 +180,10 @@ elif st.session_state.page == "CPU":
             if st.button("Order now", key="cpu3") :
                 item_name = "Ryzen 5 3600"
                 price = "Rp.2.020.000"
-                st.write("Ryzen 5 3600\
-                    \n Telah ditambahkan ke order now!")
+                st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name,price)
+
+
 
 
     with cpu4:
@@ -188,8 +195,10 @@ elif st.session_state.page == "CPU":
             if st.button("Order now", key="cpu4") :
                 item_name = "Intel I5 10400F"
                 price = "Rp.1.635.000"
-                st.write("Intel I5 10400F\
-                    \n Telah ditambahkan ke order now!")
+                st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name,price)
+
+
 
 
 elif st.session_state.page == "GPU":
@@ -207,8 +216,9 @@ elif st.session_state.page == "GPU":
             if st.button("Order now", key="gpu1") :
                 item_name = "Radeon RX 580 8G"
                 price = "Rp. 1.650.000"
-                st.write("Radeon RX 580 8G\
-                    \n Telah ditambahkan ke order now!")
+                st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name,price)
+
 
     with gpu2:
         st.subheader("Nvidia G series")
@@ -219,8 +229,9 @@ elif st.session_state.page == "GPU":
             if st.button("Order now", key="gpu2") :
                 item_name = "GTX 1660 Gaming X 6G"
                 price = "Rp. 1.679.000"
-                st.write("GTX 1660 Gaming X 6G\
-                    \n Telah ditambahkan ke order now!")
+                st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name,price)
+
 
 
     with gpu3:
@@ -232,9 +243,6 @@ elif st.session_state.page == "GPU":
             if st.button("Order now", key="gpu3") :
                 item_name = "Intel ARC 750"
                 price = "Rp. 3.499.000"
-                st.write("Intel ARC 750\
-                    \n Telah ditambahkan ke order now!")
-
 
     with gpu4:
         st.subheader("Amd Radeon RX")
@@ -245,9 +253,6 @@ elif st.session_state.page == "GPU":
             if st.button("Order now", key="gpu4") :
                 item_name = "Amd radeon RX 6700xt"
                 price = "Rp. 3.821.000"
-                st.write("Amd radeon RX 6700xt\
-                    \n Telah ditambahkan ke order now!")
-
 
 elif st.session_state.page == "SSD":
     st.title("SSD")
@@ -264,8 +269,6 @@ elif st.session_state.page == "SSD":
             if st.button("Order now", key="ssd1") :
                 item_name = "Samsung SSD 870 EVO 500GB Sata 3"
                 price = "Rp.821.000"
-                st.write("Samsung SSD 870 EVO 500GB Sata 3\
-                    \n Telah ditambahkan ke order now!")
 
     with ssd2:
         st.subheader("SSD NVMe")
@@ -276,8 +279,6 @@ elif st.session_state.page == "SSD":
             if st.button("Order now", key="ssd2") :
                 item_name = "Crucial SSD P3 Plus PCIe Gen4 M.2 NVMe"
                 price = "Rp.690.000"
-                st.write("Crucial SSD P3 Plus PCIe Gen4 M.2 NVMe\
-                    \n Telah ditambahkan ke order now!")
 
     with ssd3:
         st.subheader("SSD SATA")
@@ -355,8 +356,6 @@ elif st.session_state.page == "RAM":
             if st.button("Order now", key="ram4") :
                 item_name = "PREDATOR VESTA II DDR5 6000 MHz RGB U-DIMM [Desktop RAM] - 32GB KIT"
                 price = "Rp.1.899.000"
-                st.write("PREDATOR VESTA II DDR5 6000 MHz RGB U-DIMM [Desktop RAM] - 32GB KIT\
-                    \n Telah ditambahkan ke order now!")
 
 
 elif st.session_state.page == "PSU":
@@ -374,8 +373,6 @@ elif st.session_state.page == "PSU":
             if st.button("Order now", key="psu1") :
                 item_name = "Cooler Master MWE 550 V2 - 550W"
                 price = "Rp. 770.000"
-                st.write("Cooler Master MWE 550 V2 - 550W\
-                    \n Telah ditambahkan ke order now!")
 
     
     with psu2:
@@ -387,8 +384,6 @@ elif st.session_state.page == "PSU":
             if st.button("Order now", key="psu2") :
                 item_name = "Aerocool LUX 650W 80+ Bronze ATX PSU"
                 price = "Rp. 649.000"
-                st.write("Aerocool LUX 650W 80+ Bronze ATX PSU\
-                    \n Telah ditambahkan ke order now!")
 
 
     with psu3:
@@ -400,9 +395,6 @@ elif st.session_state.page == "PSU":
             if st.button("Order now", key="psu3") :
                 item_name = "CV Series CV750 750 Watt 80 Plus Bronze"
                 price = "Rp. 939.000"
-                st.write("CV Series CV750 750 Watt 80 Plus Bronze\
-                    \n Telah ditambahkan ke order now!")
-
 
 elif st.session_state.page == "Cooler":
     st.title("Cooler")
@@ -420,8 +412,7 @@ elif st.session_state.page == "Cooler":
                 if st.button("Order now", key="cooler1") :
                     item_name = "Armaggeddon Air Cooler Blizzard 3 ARGB PC Cooler 6 Heat Pipes Direct Contact Technology"
                     price = "Rp. 270.000"
-                    st.write("Armaggeddon Air Cooler Blizzard 3 ARGB PC Cooler 6 Heat Pipes Direct Contact Technology\
-                        \n Telah ditambahkan ke order now!")
+                    
 
     with cpu_cooler2:
         st.subheader("PcCooler CPU Cooler")
