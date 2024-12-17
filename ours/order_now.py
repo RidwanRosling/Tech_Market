@@ -11,7 +11,8 @@ st.title("Pesanan")
 if st.session_state.orders:
     df = pd.DataFrame(st.session_state.orders)
     st.write("Tabel Pesanan:")
-    st.dataframe(df)  # Menampilkan tabel pandas di Streamlit
+    st.table(df)  # Menampilkan tabel pandas di Streamlit
 if st.session_state.orders != []:
-    if st.button("buy"):
-        st.write("pesanan anda telah dibuat")
+    if st.button("buy", use_container_width=True):
+        st.session_state.orders = []
+        st.success("pesanan anda telah dibuat")
