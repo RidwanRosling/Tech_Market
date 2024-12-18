@@ -51,10 +51,14 @@ if st.session_state.page == "Home":
     st.title("Selamat datang di Merapi")
     st.subheader("(Mending Rakit PC)")
     st.write("**Solusi Lengkap untuk Merakit dan Meng-upgrade PC Impian Anda, Tanpa Ribet.**")
-    st.write("Salah satu alasan utama mengapa merakit PC adalah pilihan terbaik untuk jangka panjang adalah kemudahannya untuk di-upgrade sesuai kebutuhan di masa depan.")
-    st.write(" ".join(deskrip_Home))
-    st.subheader("Gunakan menu dibagian kiri untuk Menjelajahi lebih banyak produk lainnya.")
-
+    st.caption(
+    """
+    <div style="text-align: center;">
+        <p>Gunakan menu dibagian kiri untuk Menjelajahi lebih banyak produk lainnya.</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
     col1, col2, col3 = st.columns(3)
     with col1:
         st.header("Cpu")
