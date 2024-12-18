@@ -149,7 +149,8 @@ def main():
         df = pd.DataFrame(selected_components, columns=["Komponen", "Nama", "Harga"])
         df["Jumlah Beli"] = [st.number_input(f"Jumlah {row.Komponen} ({row.Nama}):", min_value=1, step=1, key=f"jumlah_{index}") for index, row in df.iterrows()]
         df["Total Harga"] = df["Harga"] * df["Jumlah Beli"]
-        st.dataframe(df)
+        df.index = pd.RangeIndex(start=1, stop=len(df) + 1, step=1)
+        st.table(df)
 
         # total harga
         st.write(f"\n**Total Harga**: Rp {df["Total Harga"].sum():,}")
