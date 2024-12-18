@@ -59,6 +59,7 @@ if st.session_state.page == "Home":
     """,
     unsafe_allow_html=True
 )
+
     col1, col2, col3 = st.columns(3)
     with col1:
         st.header("Cpu")
@@ -248,6 +249,7 @@ elif st.session_state.page == "GPU":
                 item_name = "Intel ARC 750"
                 price = "Rp. 3.499.000"
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
     with gpu4:
         st.subheader("Amd Radeon RX")
@@ -259,6 +261,7 @@ elif st.session_state.page == "GPU":
                 item_name = "Amd radeon RX 6700xt"
                 price = "Rp. 3.821.000"
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
 elif st.session_state.page == "SSD":
     st.title("SSD")
@@ -276,6 +279,7 @@ elif st.session_state.page == "SSD":
                 item_name = "Samsung SSD 870 EVO 500GB Sata 3"
                 price = "Rp.821.000"
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
     with ssd2:
         st.subheader("SSD NVMe")
@@ -287,6 +291,7 @@ elif st.session_state.page == "SSD":
                 item_name = "Crucial SSD P3 Plus PCIe Gen4 M.2 NVMe"
                 price = "Rp.690.000"
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
     with ssd3:
         st.subheader("SSD SATA")
@@ -297,9 +302,8 @@ elif st.session_state.page == "SSD":
             if st.button("Order now", key="ssd3") :
                 item_name = "SSD KYO KAIZEN 128GB SATA III 2.5 6GB/S SSD SATA 3"
                 price = "Rp.145.000"
-                st.write("SSD KYO KAIZEN 128GB SATA III 2.5 6GB/S SSD SATA 3\
-                    \n Telah ditambahkan ke order now!")
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
     with ssd4:
         st.subheader("SSD NVMe")
@@ -310,9 +314,8 @@ elif st.session_state.page == "SSD":
             if st.button("Order now", key="ssd4") :
                 item_name = "ACER FA100 M.2 NVMe PCIe Gen3 x4 SSD - 1TB"
                 price = "Rp.919.000"
-                st.write("ACER FA100 M.2 NVMe PCIe Gen3 x4 SSD - 1TB\
-                    \n Telah ditambahkan ke order now!")
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
 
 elif st.session_state.page == "RAM":
@@ -330,9 +333,8 @@ elif st.session_state.page == "RAM":
             if st.button("Order now", key="ram1") :
                 item_name = "RAM Kingston Fury Beast RGB DDR4 3200MHz (PC25600) 8GB (1x8GB)"
                 price = "Rp.375.000"
-                st.write("RAM Kingston Fury Beast RGB DDR4 3200MHz (PC25600) 8GB (1x8GB)\
-                    \n Telah ditambahkan ke order now!")
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
     with ram2:
         st.subheader("Ram DDR3")
@@ -343,9 +345,8 @@ elif st.session_state.page == "RAM":
             if st.button("Order now", key="ram2") :
                 item_name = "RAM EnPC LONGDIMM DDR3 8GB 1600Mhz"
                 price = "Rp.92.000"
-                st.write("RAM EnPC LONGDIMM DDR3 8GB 1600Mhz\
-                    \n Telah ditambahkan ke order now!")
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
     with ram3:
         st.subheader("Ram DDR4")
@@ -356,9 +357,8 @@ elif st.session_state.page == "RAM":
             if st.button("Order now", key="ram3") :
                 item_name = "Team Ram T-Create Expert 16GB Kit (8GBX2) DDR 4 PC3600"
                 price = "Rp. 495.000"
-                st.write("Team Ram T-Create Expert 16GB Kit (8GBX2) DDR 4 PC3600\
-                    \n Telah ditambahkan ke order now!")
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
     
     with ram4:
         st.subheader("Ram DDR5")
@@ -370,6 +370,7 @@ elif st.session_state.page == "RAM":
                 item_name = "PREDATOR VESTA II DDR5 6000 MHz RGB U-DIMM [Desktop RAM] - 32GB KIT"
                 price = "Rp.1.899.000"
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
 
 elif st.session_state.page == "PSU":
@@ -388,6 +389,7 @@ elif st.session_state.page == "PSU":
                 item_name = "Cooler Master MWE 550 V2 - 550W"
                 price = "Rp. 770.000"
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
     
     with psu2:
@@ -400,6 +402,7 @@ elif st.session_state.page == "PSU":
                 item_name = "Aerocool LUX 650W 80+ Bronze ATX PSU"
                 price = "Rp. 649.000"
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
 
     with psu3:
@@ -412,6 +415,7 @@ elif st.session_state.page == "PSU":
                 item_name = "CV Series CV750 750 Watt 80 Plus Bronze"
                 price = "Rp. 939.000"
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
 elif st.session_state.page == "Cooler":
     st.title("Cooler")
@@ -430,6 +434,7 @@ elif st.session_state.page == "Cooler":
                     item_name = "Armaggeddon Air Cooler Blizzard 3 ARGB PC Cooler 6 Heat Pipes Direct Contact Technology"
                     price = "Rp. 270.000"
                     st.session_state.orders.append({"Item": item_name, "Price": price})
+                    add_order(item_name)
                     
 
     with cpu_cooler2:
@@ -442,6 +447,7 @@ elif st.session_state.page == "Cooler":
                 item_name = "PCCOOLER Air Cooler / PC COOLER R200"
                 price = "Rp. 145.000"
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
     with st.expander("**AIO Cooler**"):
         aio_cooler1, aio_cooler2 = st.columns(2)
@@ -456,6 +462,7 @@ elif st.session_state.page == "Cooler":
                     item_name = "KYO SAMA PI240B ARGB AIO Liquid Cooling 240mm AIO 240"
                     price = "Rp. 770.000"
                     st.session_state.orders.append({"Item": item_name, "Price": price})
+                    add_order(item_name)
     
     with aio_cooler2:
         st.subheader("DeepCool Liquid Cooler")
@@ -467,6 +474,7 @@ elif st.session_state.page == "Cooler":
                     item_name = "DeepCool LE720 ARGB - 360mm AIO Liquid"
                     price = "Rp. 1.079.000"
                     st.session_state.orders.append({"Item": item_name, "Price": price})
+                    add_order(item_name)
 
     with st.expander("Pc cooler"):
      pc_cooler1, pc_cooler2 = st.columns(2)
@@ -481,6 +489,7 @@ elif st.session_state.page == "Cooler":
                 item_name = "KYO InfinitiX Fan ARGB 120mm ARGB Sync"
                 price = "Rp. 69.000"
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
      with pc_cooler2:
         st.subheader("KYO Fan Cooler")
@@ -492,6 +501,7 @@ elif st.session_state.page == "Cooler":
                 item_name = "KYO InfinitiX PL120 Fan ARGB 120mm ARGB"
                 price = "Rp. 125.000"
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
 
 
@@ -512,6 +522,7 @@ elif st.session_state.page == "Casing":
                 item_name = "Case Sades Seth"
                 price = "Rp. 450.000"
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
     with case2:
         st.subheader("Case sades")
@@ -523,6 +534,7 @@ elif st.session_state.page == "Casing":
                 item_name = "Case Sades Sphinx White"
                 price = "Rp. 455.000"
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
 
     with case3:
         st.subheader("Case Da")
@@ -534,3 +546,4 @@ elif st.session_state.page == "Casing":
                 item_name = "Casing Digital Alliance 335B"
                 price = "Rp. 395.000"
                 st.session_state.orders.append({"Item": item_name, "Price": price})
+                add_order(item_name)
