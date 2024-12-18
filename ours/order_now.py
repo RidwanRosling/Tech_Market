@@ -1,12 +1,13 @@
 import streamlit as st
 from beranda import add_order
 import pandas as pd
-
+import time
 # Contoh penggunaan fungsi
+st.title("Pembelian")
 if "orders" not in st.session_state:
     st.session_state.orders = []
+    st.subheader("Anda belum memasukkan barang ke keranjang")
 
-st.title("Pesanan")
 # Tampilkan data sebagai DataFrame Pandas
 if st.session_state.orders:
     df = pd.DataFrame(st.session_state.orders)
@@ -16,3 +17,5 @@ if st.session_state.orders != []:
     if st.button("buy", use_container_width=True):
         st.session_state.orders = []
         st.success("pesanan anda telah dibuat")
+        time.sleep(2)
+        st.rerun()
