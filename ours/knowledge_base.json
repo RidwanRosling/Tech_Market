@@ -25,19 +25,19 @@
       "answer": "71.000.000 | intel core i9 14900KS | G.Skill Trident Z5 2X16 DDR5 | Samsung SSD 990 PRO 1TB | MSI RTX 4090 XTRIO 24GB | Asus Rog Maximus Z790 HERO"
     },
     {
-      "question": "best cpu",
+      "question": "best cpu by price",
       "answer": "Ryzen 9 5900X"
     },
     {
-      "question": "best vga",
-      "answer": "VenomRX Radeon RX 580 8gb DDR5"
+      "question": "best vga by price",
+      "answer": "ASUS Nvidia GeForce RTX 3070 8GB GDDR6"
     },
     {
       "question": "best ssd",
       "answer": "samsung evo"
     },
     {
-      "question": "best mobo",
+      "question": "best mobo by price",
       "answer": "MSI A520M-A Pro"
     },
     {
@@ -57,8 +57,20 @@
       "answer": "5.000.000 | Ryzen 9 5900X | ASRock B550M Pro4 | Teamgroup DDR4 16GB | Kyo Kaizen M.2 512GB | Radeon RX 580 8G | FSP HV PRO 550W | "
     },
     {
+      "question": "best vga by performance",
+      "answer": "MSI GeForce RTX 4090 GAMING X TRIO 24GB"
+    },
+    {
       "question": "help",
-      "answer": "hello | how are you? | hi | recomend me a pc | Cheapest price PC | the most expensive pc | best cpu | best vga | best ssd | best mobo | best ram | best casing | best psu | best pc"
+      "answer": "hello | how are you? | hi | recomend me a pc | Cheapest price PC | the most expensive pc | best cpu by price | best cpu by performance | best vga by price | best vga by performance | best ssd | best mobo by performance | best mobo by price | best ram | best casing | best psu | best pc"
+    },
+    {
+      "question": "best cpu by performance",
+      "answer": "intel i7 10700k"
+    },
+    {
+      "question": "best mobo by performance",
+      "answer": "MSI Z490-A PRO"
     }
   ]
 }
