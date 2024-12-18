@@ -37,7 +37,7 @@ deskrip_COOLER = ["""Cooler untuk PC adalah perangkat yang dirancang untuk mengh
   suhu komponen tetap dalam batas aman, sehingga mencegah overheating yang dapat menurunkan performa atau bahkan
    merusak perangkat keras."""]
 
-sp_satu = ["Supports 3rd Gen AMD AM4 Ryzen™ / Future AMD Ryzen™\
+asrock_b550m = ["Supports 3rd Gen AMD AM4 Ryzen™ / Future AMD Ryzen™\
                         Processors 8 Power Phase Design, Digi Power\
                         Supports DDR4 4733+ (OC)\
                         1 PCIe 4.0 x16, 1 PCIe 3.0 x16, 1 PCIe 3.0 x1, 1 M.2 Key E for WiFi\
@@ -48,7 +48,7 @@ sp_satu = ["Supports 3rd Gen AMD AM4 Ryzen™ / Future AMD Ryzen™\
                         2 USB 3.2 Gen2 (Rear Type A+C), 8 USB 3.2 Gen1 (4 Front, 4 Rear)\
                         Realtek Gigabit LAN"]
 
-sp_dua = ["Supports 10th Gen Intel® Core™ Processors and 11th Gen Intel® Core™ Processors (LGA1200)\
+asrock_b560m = ["Supports 10th Gen Intel® Core™ Processors and 11th Gen Intel® Core™ Processors (LGA1200)\
                         6 Power Phase design\
                         Supports Intel® Turbo Boost Max 3.0 Technology\
                         Intel® B560\
@@ -65,7 +65,7 @@ sp_dua = ["Supports 10th Gen Intel® Core™ Processors and 11th Gen Intel® Cor
                         1 x Ultra M.2 Socket (M2_2), supports M Key type 2260/2280 M.2 SATA3 6.0 Gb/s module and M.2 PCI Express module up to Gen3 x4 (32 Gb/s)*\
                         Micro ATX Form Factor: 9.6-in x 7.8-in, 24.4 cm x 19.8 cm "]
 
-sp_tiga = ["Unique Feature\
+asrock_a520m = ["Unique Feature\
                         ASRock Super Alloy\
                         Premium 50A Power Choke\
                         Sapphire Black PCB\
@@ -84,18 +84,18 @@ sp_tiga = ["Unique Feature\
                         2 x DDR4 DIMM Slots\
                         AMD Ryzen series CPUs "]
 
-sp_empat = ["ASUS ROG STRIX B460-F GAMING (Socket 1200/B460/DDR4/S-ATA 600/ATX)\
+rog_strix = ["ASUS ROG STRIX B460-F GAMING (Socket 1200/B460/DDR4/S-ATA 600/ATX)\
                         Intel Socket LGA1200 for 10th Gen Intel Core, Pentium Gold and Celeron Processors*\
                         4 x DIMM, Max. 128GB, DDR4 2933/2800/2666/2400/2133 MHz Non-ECC, Un-buffered Memory*\
                         SupremeFX Shielding Technology"]
 
-sp_lima = ["- 12 Core\n - 24 threads\n - Base clock 3.4Ghz\n - Max clock up to 4.8GhzTotal L2 Cache 6MB\n - Total L3 Cache 64MB\n - Unlocked Yes\
+ryzen_5_5000s = ["- 12 Core\n - 24 threads\n - Base clock 3.4Ghz\n - Max clock up to 4.8GhzTotal L2 Cache 6MB\n - Total L3 Cache 64MB\n - Unlocked Yes\
                         \n - CMOS TSMC 7nm FinFET\n - Package AM4\n - PCI Express Version PCIe 4.0\n - Thermal Solution (PIB) Not included\n - Default TDP / TDP 105W"]
 
-sp_enam = ["- CPU Socket Type : LGA 1151\n - Processors Generation : 9th Gen\n - Family : Coffeelake\n - Cores : 2\n\
+intel_pentium = ["- CPU Socket Type : LGA 1151\n - Processors Generation : 9th Gen\n - Family : Coffeelake\n - Cores : 2\n\
                         - Threads : 4\n - Operating Frequency : 3.8GHz\n - Max Turbo Frequency : -\n - Cache : 4 MB\n - Manufacturing Tech : 14 nm\n - Integrated Graphics : Intel UHD Graphics 610\
                         \n - Thermal Design Power : 54 W\n - Thermal Solution (Cooler) : Included"]
-sp_tujuh = ["- 6 core\
+ryzen_3_3000s = ["- 6 core\
                         \n - 12 threads\
                         \n - Base clock 3.6Ghz\
                         \n - Max boost clock 4.2Ghz\
@@ -117,7 +117,7 @@ sp_tujuh = ["- 6 core\
                         \n - Max Temps\
                         \n - 95°"]
 
-sp_delapan = ["- 6 Core\
+intel_i5_gen10 = ["- 6 Core\
                         \n - 12 Threads\
                         \n - Processor base frequency 2.90Ghz\
                         \n - Max Turbo frequency 4.30Ghz\
@@ -125,7 +125,7 @@ sp_delapan = ["- 6 Core\
                         \n - Bus speed 8 GT/s\
                         \n - TDP 65 W"]
 
-sp_sembilan = ["- Interface: PCI-E\
+amd_rx580 = ["- Interface: PCI-E\
                         \n - Core Clock: 1244 MHz\
                         \n - Memory: 8GB DDR5\
                         \n - Memory Clock: 1750 MHz\
@@ -137,7 +137,7 @@ sp_sembilan = ["- Interface: PCI-E\
                         \n - Type: ATX\
                         \n - Support OS: Win 7,10 and 11"]
 
-sp_sepuluh = ["- Memory Amount : 6G\
+gtx_1660 = ["- Memory Amount : 6G\
                         \n - Memory Interface : 192bit\
                         \n - DRAM Type : GDDR6\
                         \n - Graphics Clock : 1530 MHz\
@@ -157,7 +157,7 @@ sp_sepuluh = ["- Memory Amount : 6G\
                         \n - Graphics Card Power : 125 W\
                         \n - Recommended System Power : 450 W"]
 
-sp_sebelas = ["- Memory Size : 8 GB\
+intel_arc_750 = ["- Memory Size : 8 GB\
                         \n - Memory Type : GDDR6\
                         \n - Graphics Memory Interface : 256 bit\
                         \n - Graphics Memory Bandwidth : 512 GB/s\
@@ -168,7 +168,18 @@ sp_sebelas = ["- Memory Size : 8 GB\
                         \n - Ray Tracing Units : 28\
                         \n - Intel® Xe Matrix Extensions (Intel® XMX) : Engines448"]
 
-sp_duabelas = ["- Dimension (WxHxD) : 3.94 X 2.75  X 0.27\
+amd_rx6700xt = ["- Core clock: Up to 2581mhz\
+                \n - Game Clock: Up to 2424mhz\
+                \n - Stream processors: 2560\
+                \n - process technology: 7nm\
+                \n - memory clock: 16000mhz\
+                \n - memory size: 12Gb\
+                \n - memory type: Gddr6\
+                \n - memory bus: 192bit\
+                \n - memory bandwith (GB/sec)"]
+
+
+samsung_500gb_sata_870evo = ["- Dimension (WxHxD) : 3.94 X 2.75  X 0.27\
                         \n - Weight : 89g.\
                         \n - Performance : Speed Read/write speeds of up to 560/530 MB/s\
                         \n - Encryption : Class 0 (AES 256) TCG/Opal v2.0, MS eDrive (IEEE1667)\
@@ -185,14 +196,14 @@ sp_duabelas = ["- Dimension (WxHxD) : 3.94 X 2.75  X 0.27\
                         \n - Average Power Consumption (system level) : Average: 2.2 W *Maximum: 3.5 W (Burst mode)\
                         \n - Power consumption (Idle) : Max. 30 mW"]
 
-sp_tigabelas = ["- Tipe: 2,5 SATA3 6GB/S\
+kyo_sata = ["- Tipe: 2,5 SATA3 6GB/S\
                         \n - Kapasitas : 128GB\
                         \n - Flash : 3D NAND FLASH\
                         \n - Write Speed : Up To 570 MB/s\
                         \n - Read Speed : Up To 470 MB/s\
                         \n - Power Consumption : 5 V"]
 
-sp_empatbelas = ["- interface : PCIe gen3 x4, NVMe1.4\
+acer_fa100 = ["- interface : PCIe gen3 x4, NVMe1.4\
                         \n - Form factor : M.2 2280\
                         \n - Max. sequential reading speed (MB/s) : 3300\
                         \n - Max. sequential writing speed (MB/s) : 2700\
@@ -200,7 +211,7 @@ sp_empatbelas = ["- interface : PCIe gen3 x4, NVMe1.4\
                         \n - Random write speed (IOPS) : 261K\
                         \n - Treabytes written (TBW) : 600TBW"]
 
-sp_limabelas = ["- CL(IDD) 17 cycles\
+ram_fury_kingston = ["- CL(IDD) 17 cycles\
                         \n - Row Cycle Time (tRCmin) 45.75ns(min.)\
                         \n - Refresh to Active/Refresh 350ns(min.)\
                         \n - Command Time (tRFCmin)\
@@ -208,13 +219,13 @@ sp_limabelas = ["- CL(IDD) 17 cycles\
                         \n - UL Rating 94 V - 0\
                         \n - DDR4 3200MHz"]
 
-sp_enambelas = ["- Memory Type : DDR3\
+ram_enpc_longdimm = ["- Memory Type : DDR3\
                         \n - Form Factor : U-DIMM\
                         \n - Capacity : 8GB\
                         \n - Speeds : 1600\
                         \n - Dimensions (LxWxH) : 133 x 30 x 3 mm"]
 
-sp_tujuhbelas = ["- Capacity : 16GB (8GBx2)\
+ram_team_expert = ["- Capacity : 16GB (8GBx2)\
                         \n - Module Type : 288 Pin Unbuffered DIMM Non ECC\
                         \n - Frequency : 3600\
                         \n - Latency : CL18-22-22-42\
@@ -224,7 +235,7 @@ sp_tujuhbelas = ["- Capacity : 16GB (8GBx2)\
                         \n - Dimensions : 32(H) x 134(L) x 6.5(W)mm\
                         \n - Heat Spreader : Aluminum heat spreader"]
 
-sp_delapanbelas = ["- Model Name : Predator Vesta II RGB Memory\
+ram_predator_vista = ["- Model Name : Predator Vesta II RGB Memory\
                         \n - DRAM : DDR5 RGB UDIMM\
                         \n - Capacity : 32GB (16GB x2) // 64GB (32GB x2)\
                         \n - Frequency : 6000MHz\
@@ -235,7 +246,7 @@ sp_delapanbelas = ["- Model Name : Predator Vesta II RGB Memory\
                         \n - Working Temperature : 0C to 85C\
                         \n - Storage Temperature : -55C to 100C"]
 
-sp_19 = ["- MODEL MPE-5501-ACABW-B\
+psu_coolermaster = ["- MODEL MPE-5501-ACABW-B\
                         \n - ATX VERSION ATX 12V V2.52\
                         \n - PFC Active PFC\
                         \n - INPUT VOLTAGE 200-240Vac\
@@ -266,14 +277,14 @@ sp_19 = ["- MODEL MPE-5501-ACABW-B\
                         \n - MODULAR Non Modular\
                         \n - WATTAGE 500 to 750W"]
 
-sp_20 = ["- AC Input 200-240VAC 5A 50-60Hz\
+psu_lux = ["- AC Input 200-240VAC 5A 50-60Hz\
                         \n - DC Output +3.3V +5V +12V -12V +5VSB\
                         \n - Max Current 20A 20A 50A 0.3A 2.5A\
                         \n - Max.Combined Power 120W 600W 3.6W 12.5W\
                         \n - 650W\
                         \n - EAN CODE 4718009156241"]
 
-sp_21 = ["- Weight 1.9\
+psu_cv_series = ["- Weight 1.9\
                         \n - Adjustable Single/Multi 12V Rail No\
                         \n - ATX Connector 1\
                         \n - ATX12V Version v2.31\
@@ -286,7 +297,7 @@ sp_21 = ["- Weight 1.9\
                         \n - PSU Form Factor ATX\
                         \n - Zero RPM Mode No"]
 
-sp_22 = ["- PRODUCT SIZE : 120 x 73 x 155mm\
+cooler_cpu_armageddon = ["- PRODUCT SIZE : 120 x 73 x 155mm\
                         \n - FAN SIZE : 120 x 120 x 25mm\
                         \n - FAN SPEED : 1200 RPM + 10%\
                         \n - WEIGHT : 550G\
@@ -305,7 +316,7 @@ sp_22 = ["- PRODUCT SIZE : 120 x 73 x 155mm\
                         \n - INTEL LGA : 115X/1200/1700\
                         \n - AMD : AM4/AM5"]
 
-sp_23 = ["- Max power dissipation, W\
+cooler_pccooler = ["- Max power dissipation, W\
                         \n - TDP : 110W\
                         \n - Number of heat pipes : 2\
                         \n - Number of fans : 1\
@@ -320,7 +331,7 @@ sp_23 = ["- Max power dissipation, W\
                         \n - Backlight : No\
                         \n - Dimensions (HxWxD) : 95*88*130 mm"]
 
-sp_24 = ["Fan Spesification :\
+liquid_kyo_cooling = ["Fan Spesification :\
                            \n - Fan Dimensions : 120*120*25m\
                            \n - Material : PBT ,RoHS 2.0\
                            \n - Bearing Type : Hydraulic bearing\
@@ -341,7 +352,7 @@ sp_24 = ["Fan Spesification :\
                            \n - Colour : Black\
                            \n - TDP :250W"]
 
-sp_25 = [" - Net Weight 1570 g\
+liquid_deepcool = [" - Net Weight 1570 g\
                             \n - Radiator Dimensions 402x120x27 mm(LxWxH)\
                             \n - Radiator Material Aluminum\
                             \n - Tube length 410 mm(LxWxH)\
@@ -367,7 +378,7 @@ sp_25 = [" - Net Weight 1570 g\
                             \n - LED Rated Voltage 5 VDC\
                             \n - LED Power Consumption 2.25 W(PUMP)/ 3.15 W(FANx3)"]
 
-sp_26 = ["Model =InfinitiX\
+kyo_ifinitix_120mm = ["Model =InfinitiX\
                          \n - Color =White\
                          \n - Fan Dimensions =120x120x25mm\
                          \n - Net Weight =132 g\
@@ -382,7 +393,7 @@ sp_26 = ["Model =InfinitiX\
                          \n - Working voltage = 12V DC\
                          \n - 4-5Watt"]
 
-sp_27 = [" - Model =InfinitiX PL120\
+kyo_ifinitix_pl120 = [" - Model =InfinitiX PL120\
                          \n - Color =White\
                          \n - Fan Dimensions =120x120x25.8mm\
                          \n - Net Weight =155 g\
@@ -397,7 +408,7 @@ sp_27 = [" - Model =InfinitiX PL120\
                          \n - Working voltage = 12V DC\
                          \n - 4-5Watt"]
 
-sp_28 = [" - M/B Form Factor:ATX,MICRO ATX,ITX\
+case_sades_seth = [" - M/B Form Factor:ATX,MICRO ATX,ITX\
                         \n - Front I/O Ports:USB3.0+USB1.0*2+AUDIO+MIC\
                         \n - Dimensions of chassis:W190xH470xD415mm,with black painting on Inner chassis\
                         \n - Bottom installation of PSU: YES\
@@ -410,7 +421,7 @@ sp_28 = [" - M/B Form Factor:ATX,MICRO ATX,ITX\
                         \n - HDD/SSD:2/2 PCS\
                         \n - Support hidden cables:Yes"]
 
-sp_29 = ["- Color: White\
+case_sades_sphinx = ["- Color: White\
                         \n - Dimensions: 380(L)x185(W)x425(H)\
                         \n - Material: 0.7mm thick SPCC black steel plate\
                         \n - Inner construction : 0.5mm steel plate\
@@ -426,7 +437,7 @@ sp_29 = ["- Color: White\
                         \n - Support VGA Card lenght: 370mm\
                         \n - Support CPU Cooler Height: 150mm"]
 
-sp_30 = ["Motherboard Support	Micro ATX\
+case_digital_alliance_old = ["- Motherboard Support	Micro ATX\
                         \n                      Standard ATX\
                         \n - Liquid Cooling Capable	No\
                         \n - Power Supply Supported	Standard PS2\
