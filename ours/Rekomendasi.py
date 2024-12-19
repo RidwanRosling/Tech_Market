@@ -6,12 +6,8 @@ from chatbot import get_bot_response
 st.title("Recomendation Product Merapi")
 
 # Baca data dari knowledge_base.json
-try:
-    with open('ours/knowledge_base.json', 'r') as file:
-        knowledge_base = json.load(file)
-except FileNotFoundError:
-    st.error("The file knowledge_base.json was not found!")
-    knowledge_base = {"questions": []}
+with open('ours/knowledge_base.json', 'r') as file:
+    knowledge_base = json.load(file)
     
 
 # Inisialisasi riwayat chat
@@ -41,18 +37,32 @@ if st.button("RECOMEND", use_container_width=True):
         # Memastikan data "recomend_me_a_pc" ada di dalam file JSON
         pc_data = []
         for pc, specs in pc_recommendations["recomend_me_a_pc"].items():
+
             pc_info = {
                 "PC": pc,
-                "PRICE": specs.get("PRICE"),
-                "CPU": specs.get("CPU"),
-                "Fan Cooler": specs.get("Fan Cooler"),
-                "MOBO": specs.get("MOBO"),
-                "RAM": specs.get("RAM"),
-                "STORAGE": specs.get("STORAGE"),
-                "GPU": specs.get("GPU"),
-                "PSU": specs.get("PSU"),
-                "CASING": specs.get("CASING")
+                "PRICE": specs["PRICE"],
+                "CPU": specs["CPU"],
+                "Fan Cooler": specs["Fan Cooler"],
+                "MOBO": specs["MOBO"],
+                "RAM": specs["RAM"],
+                "STORAGE": specs["STORAGE"],
+                "GPU": specs["GPU"],
+                "PSU": specs["PSU"],
+                "CASING": specs["CASING"]
             }
+
+            # pc_info = {
+            #     "PC": pc,
+            #     "PRICE": specs.get("PRICE"),
+            #     "CPU": specs.ge("CPU"),
+            #     "Fan Cooler": specs.get("Fan Cooler"),
+            #     "MOBO": specs.get("MOBO"),
+            #     "RAM": specs.get("RAM"),
+            #     "STORAGE": specs.get("STORAGE"),
+            #     "GPU": specs.get("GPU"),
+            #     "PSU": specs.get("PSU"),
+            #     "CASING": specs.get("CASING")
+            # }
             pc_data.append(pc_info)
 
         # Konversi ke DataFrame Pandas
