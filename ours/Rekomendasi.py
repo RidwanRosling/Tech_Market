@@ -5,11 +5,6 @@ from chatbot import get_pc_recommendation
 from chatbot import get_bot_response
 st.title("Recomendation Product Merapi")
 
-# Baca data dari knowledge_base.json
-with open('ours/knowledge_base.json', 'r') as file:
-    knowledge_base = json.load(file)
-    
-
 # Inisialisasi riwayat chat
 if 'chat_history' not in st.session_state:
     st.session_state.chat_history = []
