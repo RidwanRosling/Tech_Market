@@ -16,19 +16,14 @@ if 'chat_history' not in st.session_state:
 
 st.caption("type 'help' to see what bot can do!")
 
-# Input dari user
 user_question = st.text_input("Asking Something About our Products:")
 
-# Tombol untuk mendapatkan respons
 if st.button("ASK", use_container_width=True):
     if user_question:
-        # Dapatkan respons dari chatbot
         response = get_bot_response(user_question)
         
-        # Tambahkan ke riwayat chat
         st.session_state.chat_history.append({"user": user_question, "bot": response})
 
-# Tombol untuk mendapatkan rekomendasi PC
 if st.button("RECOMEND", use_container_width=True):
     pc_recommendations = get_pc_recommendation()  # Mengambil data rekomendasi dari chatbot.py
 
@@ -71,7 +66,6 @@ if st.button("RECOMEND", use_container_width=True):
         df.index = pd.RangeIndex(start=1, stop=len(df) + 1, step=1)
 
 
-        # Menampilkan DataFrame di Streamlit
         st.write(df)
     else:
         st.error("No PC recommendations found.")
@@ -85,7 +79,6 @@ for chat in st.session_state.chat_history:
 
     with st.chat_message("assistant"):
         st.write(f"Bot: {chat['bot']}")
-# Tombol untuk menghapus riwayat
 if st.button("Delete Chat History",use_container_width=True):
     st.session_state.chat_history = []
-    st.rerun()  # Menggunakan st.rerun() sebagai pengganti st.experimental_rerun()
+    st.rerun()

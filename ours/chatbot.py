@@ -8,8 +8,14 @@ def load_knowledge_base(file_path: str) -> dict:
         data: dict = json.load(file)
     return data
 
+# def load_knowledge_base(file_path: str) -> dict:
+    # file = open(file_path, 'r')
+    # data: dict = json.load(file)
+    # file.close()  # Harus manual menutup file
+    # return data
+
 def find_best_match(user_question: str, questions: list[str]) -> str | None:
-    matches: list = get_close_matches(user_question, questions, n=1, cutoff=0.6)
+    matches: list = get_close_matches(user_question, questions, n=1, cutoff=0.6) #Threshold kesamaan minimal (0.6 atau 60% mirip)
     return matches[0] if matches else None
 
 def get_answer_for_question(question: str, knowledge_base: dict) -> str | None:
@@ -30,6 +36,8 @@ def get_pc_recommendation():
 
 def get_bot_response(user_input: str) -> str:
     knowledge_base: dict = load_knowledge_base('ours/knowledge_base.json')
+    # Mencari Pertanyaan yang Cocok
+    #ist comprehension untuk mengambil semua pertanyaan dari knowledge base
     best_match: str | None = find_best_match(user_input, [q["question"] for q in knowledge_base["questions"]])
     
     if best_match:
