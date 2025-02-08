@@ -21,3 +21,10 @@
 - **Programming Language:** Python  
 - **Framework:** Streamlit  
 - **Libraries:** Pandas, JSON, (and other supporting libraries as needed)
+
+## Contributors
+
+- [@User-CruZer](https://github.com/User-CruZer)
+- [@kamiyamafitra](https://github.com/kamiyamafitra?tab=overview&from=2025-02-01&to=2025-02-08)
+- [@FlameMeta](https://github.com/FlameMeta)
+
